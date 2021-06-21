@@ -14,7 +14,7 @@ You have to finish [Preparation](../preparation/preparation.md).
 
 ## What's ROS ?
 
-- [ROS web sight](http://www.ros.org/)
+- [ROS website](http://www.ros.org/)
 
 `ROS` is the abbreviation of 'Robot Operating System'. It's a kind of middle-ware which helps to build distributed computing systems.
 
