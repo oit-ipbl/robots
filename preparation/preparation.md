@@ -76,7 +76,7 @@ Press `2D Nav Goal` on the `RViz`, and drag from desired goal postion to desired
 
 - It's OK, you can use the navigation.
 
-### Move the robot and obstacle blocks on the Stage
+### Move the obstacle blocks on the Stage
 
 You can drag the robot and colored obstacle blocks on the `Stage`.
 
