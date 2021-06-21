@@ -4,7 +4,13 @@
 
 ---
 
-In this lecture, we will make a program which can change the robot face.
+## Objectives
+
+This page explains how to make a program which can change the robot face.
+
+## Prerequisite
+
+You have to finish [Robot control (3)](robot_control/robot_control_03.md).
 
 ## Change the robot face with command (again)
 
@@ -45,6 +51,11 @@ $ chmod u+x face.py
 $ cd ..
 $ code .
 ```
+
+Edit the `face.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `face.py`.
+- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 
@@ -121,7 +132,7 @@ $ rosrun oit_pbl_ros_samples face.py
 
 ## Challenge (1)
 
-- Use another image for the robot face.
+- Use other images for the robot face.
 
 ```shell
 $ roscd oit_stage_ros/images/faces
@@ -131,7 +142,7 @@ happy.png  normal.png  sad.png # The face images. Edit them.
 
 ## Challenge (2)
 
-- Add another facial expression than `happy`, `normal`, `sad`.
+- Add other facial expressions than `happy`, `normal`, `sad`.
 
 ```shell
 $ roscd oit_stage_ros/scripts

@@ -4,7 +4,13 @@
 
 ---
 
-In this lecture we learn about `ROS` basics.
+## Objectives
+
+This page explains `ROS` basics.
+
+## Prerequisite
+
+You have to finish [Preparation](../preparation/preparation.md).
 
 ## What's ROS ?
 
@@ -41,7 +47,7 @@ If you make 'one' large program which includes all of the functionalties, there 
 
 ## ROS master
 
-Type the following command and run the `ROS master`.
+Open a linux terminal console, type the following command and run the `ROS master`.
 
 ```shell
 $ roscore
@@ -88,7 +94,7 @@ One of the LTS (Long Term Support) of `ROS`.
 
 - cf. [ROS/Tutorials/WritingPublisherSubscriber(python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
 
-Open the terminal and type the following command.
+Type the following command.
 
 ```shell
 $ roscd oit_pbl_ros_samples/scripts
@@ -147,7 +153,12 @@ listener.py                               100%[=================================
 2020-10-07 15:40:19 (7.51 MB/s) - ‘listener.py’ saved [2406/2406]
 ```
 
-Insert `# -*- coding: utf-8 -*-` at the top the files like as follows,
+Edit the `talker.py` and `listener.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit the files.
+- Or, you can use any text editor to open the python files.
+
+Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 
 ```python
 #!/usr/bin/env python
@@ -191,7 +202,7 @@ This command launch a `Node` of a designated package.
 
 - Basically, you have to run `ROS master` before execute a `Node`.
 
-Open a terminal and type `roscore` to run `ROS master`, and open another terminal for the following command.
+Open a linux terminal console and type `roscore` to run `ROS master`, and open another console for the following command.
 
 ```shell
 $ rosrun oit_pbl_ros_samples talker.py
@@ -201,7 +212,7 @@ $ rosrun oit_pbl_ros_samples talker.py
 ...
 ```
 
-Open another terminal and run the following command.
+Open another console and run the following command.
 
 ```shell
 $ rosrun oit_pbl_ros_samples listener.py

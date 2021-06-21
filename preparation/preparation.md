@@ -4,6 +4,14 @@
 
 ---
 
+## Objectives
+
+This page explains how to setup learing environment for robot group and basic usage of the softwares.
+
+## Prerequisite
+
+You have to finish [Robot Development Environment for iPBL](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md).
+
 ## Installation of softwares for robot group
 
 ```shell
@@ -11,10 +19,21 @@ $ cd catkin_ws/src/
 $ git clone https://github.com/KMiyawaki/oit_pbl_ros_samples.git
 $ git clone https://github.com/KMiyawaki/oit_stage_ros.git
 $ git clone https://github.com/KMiyawaki/oit_pbl_maps.git
+$ ls
+CMakeLists.txt oit_pbl_ros_samples oit_stage_ros oit_pbl_maps
 $ cd ~/catkin_ws && catkin_make
+Base path: /home/[user name]/catkin_ws
+Source space: /home/[user name]/catkin_ws/src
+Build space: /home/[user name]/catkin_ws/build
+Devel space: /home/[user name]/catkin_ws/devel
+Install space: /home/[user name]/catkin_ws/install
+...
+[100%] ...
 ```
 
 ## Check robot simulator
+
+Open a linux terminal console and type the following command.
 
 ```shell
 $ roslaunch oit_stage_ros navigation.launch
@@ -39,30 +58,15 @@ $ roslaunch oit_stage_ros navigation.launch
 
 `Navigation` means autonomus robots' movements, which consists of following 2 steps.
 
-1. Localization with a laser range finder and a map.
+1. Localization with a laser range finder and a map. 
+    - Manual localization method is [here](./localization.md), that is a supplementary explanation and is not essential.
 2. Autonomus movements to the designated position with obstacle avoidance.
 
-`ROS` provides the functionalities through `Navigation meta-package`.
+`ROS` provides the functionalities through `Navigation meta-package`, and you can use the robot navigation simply by indicating a navigation goal.
 
 - cf. [ROS navigation](http://wiki.ros.org/navigation)
 
-### Localization
-
-A `ROS` robot can estimate its position and orientation on a room by matching between pre-obtained map shape and laser range finder's data.
-
-- At first, you should drag the robot, that is a red block on the `Stage`.
-
-Press `2D Pose Estimate` button on the `RViz`, and drag the arrow from the correct position on the map to correct direction of the robot.
-
-![2020-02-07_11-57-36.svg.png](./2020-02-07_11-57-36.svg.png)
-
-It's OK when laser range finder's data (yellow points) matched the shape of the map raughly.
-
-#### **Imortant notice**
-
-Localization is not necessary, because our simulator will finish localization while boot process.
-
-### Indicate navigation goal
+### Indicate a navigation goal
 
 Press `2D Nav Goal` on the `RViz`, and drag from desired goal postion to desired robot direction.
 
@@ -78,23 +82,31 @@ You can drag the robot and colored obstacle blocks on the `Stage`.
 
 ![2021-06-19_161332.png](./2021-06-19_161332.png)
 
+You can see the blue block on the virtual camera view, and laser range finder's detection of the block (yellow points) as well in the `RViz` screen.
+
+![2021-06-21_123650.png](./2021-06-21_123650.png)
+
 #### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(move the objects)
 
 - It's OK, you can move objects on the `Stage`.
 
 ## Robot's facial expression
 
-1. Run robot simulator. `roslaunch oit_stage_ros navigation.launch`.
-    - The command launch `~catkin_ws/src/oit_stage_ros/scripts/face_image_publisher.py`, which publishes face image.
+1. If you closed the robot simulator, launch it agein with `roslaunch oit_stage_ros navigation.launch` command.
+    - The command also launches `~catkin_ws/src/oit_stage_ros/scripts/face_image_publisher.py`, which publishes face image.
     - You can see the robot's face on the `RViz`.
-2. Open another terminal and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
+2. Open another console and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
     - You can use `'sad'` or `'normal'` alternatively.
 
 ![2021-01-15_182739.png](./2021-04-29_090555.png)
 
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(change the face)
 
-- It's OK, you can change the Robot's face.
+- It's OK, you can show the robot's faces, happy, normal and sad.
+
+## Terminate the simulator
+
+Press `Ctrl+C` on the linux console which launched the simulator.
 
 ## Referecne
 

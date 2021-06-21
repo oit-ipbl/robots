@@ -4,7 +4,13 @@
 
 ---
 
-In this lecture, we will control the robot with command and tools.
+## Objectives
+
+This page explains how to control the robot with command and tools.
+
+## Prerequisite
+
+You have to finish [ROS basics](basics/basics_01.md).
 
 ## Launch simulator
 
@@ -12,7 +18,7 @@ In this lecture, we will control the robot with command and tools.
 $ roslaunch oit_stage_ros navigation.launch
 ```
 
-Open another terminal and type `rostopic list` commmand.
+Open another terminal console and type `rostopic list` commmand.
 
 Imporant topics are as follows,
 
@@ -78,17 +84,17 @@ Terminate with `Ctrl+C`.
 
 ## Control the robot with key board
 
-Reboot the simulator, and open another terminal fot the following command
+Re-start the simulator, and open another terminal console for the following command.
 
 ```shell
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-On the terminal, you use the 4 keys to control the robot.
+On the terminal, use the following 4 keys to control the robot.
 
 - `i`: forward, `j`: left turn `l`: right turn `,`: back
 
-Terminate by `Ctrl+C`.
+Terminate the `teleop_twist_keyboard.py` by `Ctrl+C`.
 
 ## Control the robot with mouse
 
@@ -98,11 +104,11 @@ Type the following command. You can see one GUI window named 'Mouse Teleop'.
 $ rosrun  mouse_teleop mouse_teleop.py mouse_vel:=cmd_vel
 ```
 
-You can send velocities to the robot by draggin your mouse on the 'Mouse Teleop' window.
+You can send velocities to the robot by dragging your mouse on the 'Mouse Teleop' window.
 
 ![2020-02-07_13-14-59.png](./2020-02-07_13-14-59.png)
 
-- **Important** You have to press close button on the GUI 'Mouse Teleop' windows to terminalte mosue teleop.
+- **Important** You have to press close button on the GUI 'Mouse Teleop' windows to terminalte `mouse_teleop.py`.
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot control)
 

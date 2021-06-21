@@ -4,11 +4,22 @@
 
 ---
 
-In this lecture, we add some programs to `sensors.py`, and challenge simple image processing.
+## Objectives
+
+This page explains how to make a simple image processing program.  We will add some codes to `sensors.py`.
+
+## Prerequisite
+
+You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
 
 ## Excercise
 
-Make a python file inside of the `oit_pbl_ros_samples` package.
+Edit the `sensors.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`.
+- Or, you can use any text editor to open the python file.
+
+Additional codes are as follows,
 
 ```python
 #!/usr/bin/env python
@@ -81,23 +92,23 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624081858.714078, 16.300000]: msg.ranges[0] = 1.412500
 ```
 
-Open another terminal and type the following command.
+Open another console and type the following command.
 
 ```shell
 $ rqt_image_view
 ```
 
-Image viewer window will come up. Select `image` topic from drop down box and you can see the image grabed by the virtual camera.
+Image viewer window will come up. Select the `image` topic from the drop down box and you can see the image grabed by the virtual camera.
 
 ![2021-06-19_154626.png](./2021-06-19_154626.png)
 
-Select `image_mod`, you can see the image processing result, which shows extracted blue colord region.
+Select `image_mod`, and you can see the image processing result, which shows extracted blue colord region.
 
 ![2021-06-19_154610.png](./2021-06-19_154610.png)
 
 ## Question (1)
 
-- Try to extract yellow and green objects like as blue block.
+- Try to extract yellow and green objects like as the blue block.
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data)
 

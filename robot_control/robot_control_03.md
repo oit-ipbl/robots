@@ -4,7 +4,16 @@
 
 ---
 
-In this lecture, we will make a program for autonomus navigation.  
+## Objectives
+
+This page explains how to make make a program for autonomus navigation.
+
+## Prerequisite
+
+You have to finish [Robot control (2)](robot_control/robot_control_02.md).
+
+## ROS navigation
+
 Thanks to the [`ROS navigation`meta-package](http://wiki.ros.org/navigation), it is very simple to make a navigation program.  
 We have learned to use `/cmd_vel` topic for velocity control. It is useful to make simple robot movement. On the other hand, `ROS navigation` presents functionalties including global path planning and obstacle avoidance for autonomus navigation.  The node `move_base` provides the functionalities. Your program will use the `move_base` with following procedures,
 
@@ -22,9 +31,12 @@ $ pwd
 /home/[user name]/catkin_ws/src/oit_pbl_ros_samples/scripts
 $ touch navigation.py
 $ chmod u+x navigation.py
-$ cd ..
-$ code .
 ```
+
+Edit the `navigation.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `navigation.py`.
+- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 
@@ -108,7 +120,7 @@ $ rosrun oit_pbl_ros_samples navigation.py
 ### How to get coordinate on the map
 
 `Publish Point` button on the `RViz` can be used.
-Open new terminal and type the command.
+Open a new terminal console and type the command.
 
 ```shell
 $ rostopic echo /clicked_point
@@ -120,7 +132,7 @@ Press `Publish Point` on the `RViz`. After that click an arbitrary point on the 
 
 ![2018-11-10_17-12-28.png](./2018-11-10_17-12-28.png)
 
-The following information of the map points will show on the terminal used to run the `rostopic echo /clicked_point` command.  
+The following information of the map points will show on the console used to run the `rostopic echo /clicked_point` command.  
 You can use the `x` and `y` values.
 
 ```shell

@@ -4,7 +4,13 @@
 
 ---
 
-In this lecture, we will make a program which can send data to `/cmd_vel` topic.
+## Objectives
+
+This page explains how to make a program which sends velocities to the robot via `/cmd_vel` topic.
+
+## Prerequisite
+
+You have to finish [Robot control (1)](robot_control/robot_control_01.md).
 
 ## Excercise
 
@@ -16,9 +22,12 @@ $ pwd
 /home/[user name]/catkin_ws/src/oit_pbl_ros_samples/scripts
 $ touch robot_control.py
 $ chmod u+x robot_control.py
-$ cd ..
-$ code .
 ```
+
+Edit the `robot_control.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `robot_control.py`.
+- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 

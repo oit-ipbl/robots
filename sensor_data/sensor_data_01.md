@@ -4,7 +4,13 @@
 
 ---
 
-In this lecture we use simulated sensors.
+## Objectives
+
+This page explains how to use simulated sensors.
+
+## Prerequisite
+
+You have to finish [Robot control (3)](robot_control/robot_control_03.md).
 
 ## Laser Range Finder
 
@@ -37,9 +43,12 @@ $ pwd
 /home/[user name]/catkin_ws/src/oit_pbl_ros_samples/scripts
 $ touch sensors.py
 $ chmod u+x sensors.py
-$ cd ..
-$ code .
 ```
+
+Edit the `sensors.py`.
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`.
+- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 
