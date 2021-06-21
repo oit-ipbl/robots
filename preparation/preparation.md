@@ -15,7 +15,7 @@ You have to finish [Robot Development Environment for iPBL](https://github.com/o
 ## Installation of softwares for robot group
 
 ```shell
-$ cd catkin_ws/src/
+$ cd ~/catkin_ws/src/
 $ git clone https://github.com/KMiyawaki/oit_pbl_ros_samples.git
 $ git clone https://github.com/KMiyawaki/oit_stage_ros.git
 $ git clone https://github.com/KMiyawaki/oit_pbl_maps.git
@@ -93,7 +93,7 @@ You can see the blue block on the virtual camera view, and laser range finder's 
 ## Robot's facial expression
 
 1. If you closed the robot simulator, launch it agein with `roslaunch oit_stage_ros navigation.launch` command.
-    - The command also launches `~catkin_ws/src/oit_stage_ros/scripts/face_image_publisher.py`, which publishes face image.
+    - The command also launches `~/catkin_ws/src/oit_stage_ros/scripts/face_image_publisher.py`, which publishes face image.
     - You can see the robot's face on the `RViz`.
 2. Open another console and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
     - You can use `'sad'` or `'normal'` alternatively.
