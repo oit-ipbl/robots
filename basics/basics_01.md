@@ -1,4 +1,4 @@
-# ROS(1)
+# ROS basics
 
 [README](../README.md)
 
@@ -78,13 +78,21 @@ process[rosout-1]: started with pid [7310]
 started core service [/rosout]
 ```
 
-Check the messages. You can see the word, `melodic`.
+Check the messages. You can see the phrase, `'* /rosdistro: melodic'`.
 
-### Melodic Morenia
+### [Melodic Morenia](http://wiki.ros.org/melodic)
 
-One of the LTS (Long Term Support) of `ROS`.
+One of the LTS distribution of `ROS`.
 
 - Press `Ctrl+C` to terminate `ROS master`.
+
+```shell
+^C[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
+```
 
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(ROS master)
 
@@ -155,7 +163,7 @@ listener.py                               100%[=================================
 
 Edit the `talker.py` and `listener.py`.
 
-- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit the files.
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit the files in `~/catkin_ws/src/oit_pbl_ros_samples/scripts` directory.
 - Or, you can use any text editor to open the python files.
 
 Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
@@ -272,7 +280,8 @@ $ rostopic type /chatter
 std_msgs/String
 ```
 
-You can see that the topic `/chatter` is String data.
+You can see that the topic `/chatter` is String data.  
+`ROS` has many standard data types. See [std_msgs](http://wiki.ros.org/std_msgs).
 
 ## Summary of talker.py
 
@@ -320,12 +329,6 @@ if __name__ == '__main__':
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(talker, listener and rqt_graph)
 
 - It's OK, you can run the talker and listener with rqt_graph visualization.
-
-## Advanced question
-
-Check the `std_msg` of `ROS` .
-
-- You can see many data types of [std_msgs](http://wiki.ros.org/std_msgs).
 
 ---
 
