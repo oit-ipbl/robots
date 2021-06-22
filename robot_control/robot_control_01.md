@@ -27,9 +27,9 @@ $ rostopic list
 ...
 /base_scan # Virtual laser range finder's data
 ...
-/cmd_vel # Velocity command to robot
+/cmd_vel # Velocity command to the robot
 ...
-/image   # Picture grabbed by virtual camera 
+/image   # Picture grabbed by the virtual camera 
 ...
 /odom    # Robot's position with some errors
 ...
@@ -39,11 +39,11 @@ $ rostopic list
 
 ## Control the robot via command line
 
-`rostopic pub` command is used for publish the `cmd_vel` topic.
+`rostopic pub` command is used to publish the `cmd_vel` topic.
 
 The data type of `cmd_vel` is [`geometry_msgs/Twist Message`](http://docs.ros.org/en/melodic/api/geometry_msgs/html/msg/Twist.html), which is complex structure.
 
-We strongly recommend `tab` completion to input the following command.
+We strongly recommend `Tab` completion to input the following command.
 
 ```shell
 $ rostopic pub /cmd_vel geometry_msgs/Twist "linear:
@@ -59,12 +59,12 @@ angular:
 Example `Tab` completion process is here,
 
 ```shell
-$ rostopic pub /cmd_vel # Press tab key about 2~3 times
+$ rostopic pub /cmd_vel # Press Tab key about 2~3 times
 ```
 
 Then, almost of the command will appear.
 
-By the command, the robot will go forward with 0.4m/sec and stops by a wall.
+By the command, the robot will go forward with 0.4m/sec and stops because of a wall.
 Press `Ctrl+C` to terminate the command.
 
 Try following command to make the robot turns. `angular: z` is an angular velocity described with radian.
@@ -80,7 +80,7 @@ angular:
  z: 0.52"  -r 10
 ```
 
-Terminate with `Ctrl+C`.
+Terminate by `Ctrl+C`.
 
 ## Control the robot with key board
 
