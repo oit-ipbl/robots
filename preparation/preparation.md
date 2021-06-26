@@ -28,7 +28,10 @@ Build space: /home/[user name]/catkin_ws/build
 Devel space: /home/[user name]/catkin_ws/devel
 Install space: /home/[user name]/catkin_ws/install
 ...
-[100%] ...
+-- Build files have been written to: /catkin_ws/build
+####
+#### Running command: "make -j8 -l8" in "/home/ubuntu/catkin_ws/build"
+####
 ```
 
 ## Check robot simulator
