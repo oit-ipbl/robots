@@ -229,7 +229,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 1)
 
-- It's OK, you can finish the question 1 and 2.
+- It's OK, you can finish the Exercise (sensor 1-1) and Exercise (sensor 1-2).
 
 ## Challenge (sensor data1-1: difficult)
 

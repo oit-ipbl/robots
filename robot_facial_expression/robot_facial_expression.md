@@ -129,7 +129,7 @@ $ rosrun oit_pbl_ros_samples face.py
 
 ### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot facial exprssion programming)
 
-- It's OK, you can finish the question 1.
+- It's OK, you can finish the Exercise (face 1).
 
 ## Challenge (face 1)
 

@@ -185,7 +185,7 @@ Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis 
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot navigation programming)
 
-- It's OK, you can finish the question 1.
+- It's OK, you can finish the Exercise (robot control 3-1).
 
 ## Challenge (robot control 3)
 
