@@ -14,7 +14,8 @@ You have to finish [Robot control (1)](robot_control/robot_control_01.md).
 
 ## Excercise
 
-Make a python file inside of the `oit_pbl_ros_samples` package.
+Make a python file inside of the `oit_pbl_ros_samples` package.  
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
 
 ```shell
 $ roscd oit_pbl_ros_samples/scripts

@@ -14,7 +14,8 @@ You have to finish [Robot control (3)](robot_control/robot_control_03.md).
 
 ## Change the robot face with command (again)
 
-At first, launch the simulator.
+At first, launch the simulator.  
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following command.
 
 ```shell
 $ roslaunch oit_stage_ros navigation.launch

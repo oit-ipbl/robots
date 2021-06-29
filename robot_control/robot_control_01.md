@@ -14,11 +14,13 @@ You have to finish [ROS basics](basics/basics_01.md).
 
 ## Launch simulator
 
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following command.
+
 ```shell
 $ roslaunch oit_stage_ros navigation.launch
 ```
 
-Open another terminal console and type `rostopic list` commmand.
+Open another terminal emulator and type `rostopic list` commmand.
 
 Imporant topics are as follows,
 
@@ -84,7 +86,7 @@ Terminate by `Ctrl+C`.
 
 ## Control the robot with key board
 
-Re-start the simulator, and open another terminal console for the following command.
+Re-start the simulator, and open another terminal emulator for the following command.
 
 ```shell
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py

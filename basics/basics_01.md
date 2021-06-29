@@ -47,7 +47,7 @@ If you make 'one' large program which includes all of the functionalties, there 
 
 ## ROS master
 
-Open a linux terminal console, type the following command and run the `ROS master`.
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following command to run the `ROS master`.
 
 ```shell
 $ roscore
@@ -210,7 +210,7 @@ This command launch a `Node` of a designated package.
 
 - Basically, you have to run `ROS master` before execute a `Node`.
 
-Open a linux terminal console and type `roscore` to run `ROS master`, and open another console for the following command.
+Open a linux terminal emulator and type `roscore` to run `ROS master`, and open another emulator for the following command.
 
 ```shell
 $ rosrun oit_pbl_ros_samples talker.py
@@ -220,7 +220,7 @@ $ rosrun oit_pbl_ros_samples talker.py
 ...
 ```
 
-Open another console and run the following command.
+Open another emulator and run the following command.
 
 ```shell
 $ rosrun oit_pbl_ros_samples listener.py

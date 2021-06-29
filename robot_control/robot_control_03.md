@@ -23,7 +23,8 @@ We have learned to use `/cmd_vel` topic for velocity control. It is useful to ma
 
 ## Excercise
 
-Make a python file inside of the `oit_pbl_ros_samples` package.
+Make a python file inside of the `oit_pbl_ros_samples` package.  
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
 
 ```shell
 $ roscd oit_pbl_ros_samples/scripts
@@ -120,7 +121,7 @@ $ rosrun oit_pbl_ros_samples navigation.py
 ### How to get coordinate on the map
 
 `Publish Point` button on the `RViz` can be used.
-Open a new terminal console and type the command.
+Open a new terminal emulator and type the command.
 
 ```shell
 $ rostopic echo /clicked_point
@@ -132,7 +133,7 @@ Press `Publish Point` on the `RViz`. After that click an arbitrary point on the 
 
 ![2018-11-10_17-12-28.png](./2018-11-10_17-12-28.png)
 
-The following information of the map points will show on the console used to run the `rostopic echo /clicked_point` command.  
+The following information of the map points will show on the emulator used to run the `rostopic echo /clicked_point` command.  
 You can use the `x` and `y` values.
 
 ```shell

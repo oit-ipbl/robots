@@ -92,7 +92,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624081858.714078, 16.300000]: msg.ranges[0] = 1.412500
 ```
 
-Open another console and type the following command.
+Open another emulator and type the following command.
 
 ```shell
 $ rqt_image_view
