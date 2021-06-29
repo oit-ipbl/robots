@@ -26,6 +26,8 @@ $ roslaunch oit_stage_ros navigation.launch
 - Open another terminal and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
   - You can use `'sad'` or `'normal'` alternatively.
 
+![2021-01-15_182739.png](./2021-04-29_090555.png)
+
 ## Let's think
 
 ```shell
@@ -39,24 +41,22 @@ We have learned publisher of String data at the [ROS basics](../basics/basics_01
 
 Before you read following texts, let's try to make a program from scratch.
 
-## Excercise
+## Practice [Change robot face with python]
 
 Make a python file inside of the `oit_pbl_ros_samples` package.
 
 ```shell
 $ roscd oit_pbl_ros_samples/scripts
 $ pwd
-/home/[user name]/catkin_ws/src/oit_pbl_ros_samples/scripts
+/home/ubuntu/catkin_ws/src/oit_pbl_ros_samples/scripts
 $ touch face.py
 $ chmod u+x face.py
 $ cd ..
-$ code .
 ```
 
 Edit the `face.py`.
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `face.py`.
-- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 
@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
 ```
 
-## Run
+### Run
 
 At first, launch the simulator.
 
@@ -113,7 +113,7 @@ $ roslaunch oit_stage_ros navigation.launch
 After a while run the `face.py`.
 
 - Cafully check the screen of `Rviz`.
-- The robot's face changes with 3 seconds.
+- The robot's face changes every three seconds.
 
 ```shell
 $ rosrun oit_pbl_ros_samples face.py
@@ -121,7 +121,7 @@ $ rosrun oit_pbl_ros_samples face.py
 [INFO] [1623925482.101090, 2109.000000]: /face:Exiting
 ```
 
-## Question (1)
+## Exercise [Face1]
 
 - Add change face functionality into the `navigation.py`.
   - For example, when robot have reached a goal, the robot express `happy` face for 5 seconds.
@@ -131,7 +131,7 @@ $ rosrun oit_pbl_ros_samples face.py
 
 - It's OK, you can finish the question 1.
 
-## Challenge (1)
+## Challenge (Face1)
 
 - Use other images for the robot face.
 
@@ -141,14 +141,22 @@ $ ls
 happy.png  normal.png  sad.png # The face images. Edit them.
 ```
 
-## Challenge (2)
+- 640x480 `png` image can be used for this. However, other image format may be acceptable. Please try.
 
-- Add other facial expressions than `happy`, `normal`, `sad`.
+## Challenge (Face2: difficult)
+
+- Add other facial expressions than `happy`, `normal`, `sad`. e.g. `surprise`.
 
 ```shell
 $ roscd oit_stage_ros/scripts
 $ ls 
 face_image_publisher.py # This is publisher program of face images.
+```
+
+- Modify `face_image_publisher.py` to respond to the following command and show the facial expression of `surprise`.
+
+```shell
+rostopic pub /robot_face_type std_msgs/String "data: 'surprise'" -1
 ```
 
 ---

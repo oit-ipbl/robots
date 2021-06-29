@@ -17,7 +17,6 @@ You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
 Edit the `sensors.py`.
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`.
-- Or, you can use any text editor to open the python file.
 
 Additional codes are as follows,
 

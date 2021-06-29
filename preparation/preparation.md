@@ -24,11 +24,11 @@ $ git clone https://github.com/KMiyawaki/oit_pbl_maps.git
 $ ls
 CMakeLists.txt oit_pbl_ros_samples oit_stage_ros oit_pbl_maps
 $ cd ~/catkin_ws && catkin_make
-Base path: /home/[user name]/catkin_ws
-Source space: /home/[user name]/catkin_ws/src
-Build space: /home/[user name]/catkin_ws/build
-Devel space: /home/[user name]/catkin_ws/devel
-Install space: /home/[user name]/catkin_ws/install
+Base path: /home/ubuntu/catkin_ws
+Source space: /home/ubuntu/catkin_ws/src
+Build space: /home/ubuntu/catkin_ws/build
+Devel space: /home/ubuntu/catkin_ws/devel
+Install space: /home/ubuntu/catkin_ws/install
 ...
 -- Build files have been written to: /catkin_ws/build
 ####

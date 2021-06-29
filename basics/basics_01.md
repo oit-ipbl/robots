@@ -51,7 +51,7 @@ Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container]
 
 ```shell
 $ roscore
-... logging to /home/[user name]/.ros/log/9474a7ce-4941-11ea-a3d0-000c2924787d/roslaunch-ubuntu-7288.log
+... logging to /home/ubuntu/.ros/log/9474a7ce-4941-11ea-a3d0-000c2924787d/roslaunch-ubuntu-7288.log
 Checking log directory for disk usage. This may take awhile.
 Press Ctrl-C to interrupt
 Done checking log file disk usage. Usage is <1GB.
@@ -164,7 +164,6 @@ listener.py                               100%[=================================
 Edit the `talker.py` and `listener.py`.
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit the files in `~/catkin_ws/src/oit_pbl_ros_samples/scripts` directory.
-- Or, you can use any text editor to open the python files.
 
 Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 

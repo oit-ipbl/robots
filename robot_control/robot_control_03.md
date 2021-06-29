@@ -29,7 +29,7 @@ Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container]
 ```shell
 $ roscd oit_pbl_ros_samples/scripts
 $ pwd
-/home/[user name]/catkin_ws/src/oit_pbl_ros_samples/scripts
+/home/ubuntu/catkin_ws/src/oit_pbl_ros_samples/scripts
 $ touch navigation.py
 $ chmod u+x navigation.py
 ```
@@ -37,7 +37,6 @@ $ chmod u+x navigation.py
 Edit the `navigation.py`.
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `navigation.py`.
-- Or, you can use any text editor to open the python file.
 
 Type the following template. It's OK copy and paste.
 
