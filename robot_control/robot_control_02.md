@@ -12,7 +12,7 @@ This page explains how to make a program which sends velocities to the robot via
 
 You have to finish [Robot control (1)](robot_control/robot_control_01.md).
 
-## Practice [go forward and turn]
+## Practice (go forward and turn)
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.

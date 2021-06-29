@@ -63,7 +63,7 @@ $ roslaunch oit_stage_ros navigation.launch
 
 `Navigation` means autonomus robots' movements, which consists of following 2 steps.
 
-1. Localization with a laser range finder and a map. 
+1. Localization with a laser range finder and a map.
     - Manual localization method is [here](./localization.md), that is a supplementary explanation and is not essential.
 2. Autonomus movements to the designated position with obstacle avoidance.
 

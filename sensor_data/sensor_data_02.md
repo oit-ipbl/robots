@@ -12,7 +12,7 @@ This page explains how to make a simple image processing program.  We will add s
 
 You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
 
-## Practice [image processing for robot]
+## Practice (image processing for robot)
 
 Edit the `sensors.py`.
 

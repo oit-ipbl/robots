@@ -21,7 +21,7 @@ We have learned to use `/cmd_vel` topic for velocity control. It is useful to ma
 2. Wait until connection to `move_base`.
 3. Send navigation goal to the `move_base` and wait the result.
 
-## Practice [Simple navigation]
+## Practice (simple navigation)
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.

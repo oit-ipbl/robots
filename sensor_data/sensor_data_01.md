@@ -34,7 +34,7 @@ Wheel odometry can estimate robot's pose with rotary encoder attached on wheels.
 It has some errors, and when you drag the robot on the `Stage`, the position will become meaningless.  
 However, the odometry data can be used to measure the movement distance of the robot in short range.
 
-## Practice [Simple sensor]
+## Practice (simple sensor)
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
@@ -181,7 +181,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624081859.014337, 16.600000]: msg.ranges[0] = 1.412500
 ```
 
-## Exercise [Sensor1-1]
+## Exercise (sensor 1-1)
 
 - Run the `sensors.py` and control the robot via command line.
   - See, [Robot control (1)](../robot_control/robot_control_01.md).
@@ -217,7 +217,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624082236.510218, 394.100000]: msg.width = 700, msg.height = 540
 ```
 
-## Exercise [Sensor1-2]
+## Exercise (sensor 1-2)
 
 - Output the distance to right side obstacles of the robot.
   - Try left side and front direction as well.

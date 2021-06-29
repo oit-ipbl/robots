@@ -41,7 +41,7 @@ We have learned publisher of String data at the [ROS basics](../basics/basics_01
 
 Before you read following texts, let's try to make a program from scratch.
 
-## Practice [Change robot face with python]
+## Practice (change robot face with python)
 
 Make a python file inside of the `oit_pbl_ros_samples` package.
 
@@ -121,7 +121,7 @@ $ rosrun oit_pbl_ros_samples face.py
 [INFO] [1623925482.101090, 2109.000000]: /face:Exiting
 ```
 
-## Exercise [Face1]
+## Exercise (face 1)
 
 - Add change face functionality into the `navigation.py`.
   - For example, when robot have reached a goal, the robot express `happy` face for 5 seconds.
@@ -131,7 +131,7 @@ $ rosrun oit_pbl_ros_samples face.py
 
 - It's OK, you can finish the question 1.
 
-## Challenge (Face1)
+## Challenge (face 1)
 
 - Edit or replace robot's face image files.
 
@@ -145,7 +145,7 @@ happy.png  normal.png  sad.png # The face images. Edit them, or replace to your 
   - Do not change the file names.
 - See [Direct access directory and files inside the ROS container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#direct-access-directory-and-files-inside-the-ros-container) to edit the images from Windows.
 
-## Challenge (Face2: difficult)
+## Challenge (face 2: difficult)
 
 - Add other facial expressions than `happy`, `normal`, `sad`. e.g. `surprise`.
 
