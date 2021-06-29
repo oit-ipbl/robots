@@ -117,15 +117,25 @@ Select `image_mod`, and you can see the image processing result, which shows ext
 
 ![2021-06-19_154610.png](./2021-06-19_154610.png)
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 2)
-
-- It's OK, you can finish the question 1.
-
-## Challenge (sensor data 2-1)
+## Exercise (sensor 2-1)
 
 - Try to extract yellow and green objects like as the blue block.
+- Important point of the code is here,
 
-## Challenge (sensor data 2-2: difficult)
+```python
+                hsv = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV) # Convert BGR color space to HSV.
+                blue = cv2.inRange(hsv, (100, 200, 200), (140, 255, 255)) # Extract the pixels where 100<=H<=140, 200<=S<=255 and 200<=V<=255  
+```
+
+`cv2.cvtColor` converts the image `cv_image` from BGR to HSV (hue, saturation and value) color space. [HSV color space](https://en.wikipedia.org/wiki/HSL_and_HSV) is very useful to extract the pixels which have specific color. Basically we just need to indicate H value, which represents the color with [circle](https://en.wikipedia.org/wiki/HSL_and_HSV#/media/File:HSV_color_solid_cylinder_saturation_gray.png). The range of hue value is from 0 to 179 in OpenCV. See [Changing Colorspaces](https://docs.opencv.org/master/df/d9d/tutorial_py_colorspaces.html)
+
+- Adjust the hue value in `cv2.inRange(hsv, (100, 200, 200), (140, 255, 255))` to extract other colored objects.
+
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 2)
+
+- It's OK, you can finish the Exercise (sensor 2-1).
+
+## Challenge (sensor 2-1: difficult)
 
 - Turn the robot to the specific colored object.
 

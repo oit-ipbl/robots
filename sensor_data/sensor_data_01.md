@@ -186,6 +186,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 - Run the `sensors.py` and control the robot via command line.
   - See, [Robot control (1)](../robot_control/robot_control_01.md).
 - Check the screen output of `sensors.py`. Which value change ?
+  - Modify the program so that you only keep `rospy.loginfo()` for the values you want to focus on.
 - Try not only straight movement, but also turning behavior.
 
 ```shell
@@ -229,6 +230,49 @@ $ rosrun oit_pbl_ros_samples sensors.py
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 1)
 
 - It's OK, you can finish the question 1 and 2.
+
+## Challenge (sensor data1-1: difficult)
+
+- Let's add a movable object. The simulation definitions are written in *.world file.
+
+```shell
+$ roscd oit_pbl_maps/maps/
+$ ls |grep world
+LayoutA.world # This world file is used.
+```
+
+- Open `LayoutA.world` with an editor, and see the bottom of the file.
+- There are three blocks' definitions.
+
+```text
+rect_block(
+  pose [-2 0 0 0]
+  color "blue"
+)
+
+polygon_block(
+  pose [-2 -2 0 0]
+  color "green"
+)
+
+wall_block(
+  pose [-2 2 0 0]
+  color "yellow"
+)
+```
+
+- You can add a new block like as follows,
+
+```text
+rect_block(
+  pose [-2 3 0 0]
+  color "purple"
+)
+```
+
+## Referecne
+
+- [How to Use Player/Stage](http://player-stage-manual.readthedocs.io/en/stable/)
 
 ---
 
