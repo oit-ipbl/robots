@@ -142,6 +142,7 @@ happy.png  normal.png  sad.png # The face images. Edit them.
 ```
 
 - 640x480 `png` image can be used for this. However, other image format may be acceptable. Please try.
+- See [Direct access directory and files inside the ROS container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#direct-access-directory-and-files-inside-the-ros-container) to edit the images from Windows.
 
 ## Challenge (Face2: difficult)
 
