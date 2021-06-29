@@ -187,7 +187,7 @@ Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis 
 
 - It's OK, you can finish the question 1.
 
-## Question (robot control 3)
+## Challenge (robot control 3)
 
 - Change the third argument of the following code, and check the direction which the robot faces when the navigation finished.
 

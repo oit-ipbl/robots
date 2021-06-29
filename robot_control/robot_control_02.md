@@ -114,9 +114,9 @@ $ rosrun oit_pbl_ros_samples robot_control.py
 
 - It's OK, you can finish the exercise 1 and 2.
 
-## Question (robot control 2)
+## Challenge (robot control 2)
 
-- Modify `robot_control.py` to assing values to both `cmd.linear.x` and `cmd.angular.z`, and check the robot's movement.
+- Modify `robot_control.py` to assign arbitral velocity values to both `cmd.linear.x` and `cmd.angular.z`, and check the robot's movement.
 
 ---
 

@@ -108,7 +108,7 @@ Type the following command.
 $ roscd oit_pbl_ros_samples/scripts
 ```
 
-### Question (1)
+### Exercise (ROS basics 1)
 
 - Check the current working directory. Do you know the linux command for this ?
 
@@ -173,7 +173,7 @@ Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 # Software License Agreement (BSD License)
 ```
 
-### Question (2)
+### Exercise (ROS basics 2)
 
 - Add executable permission to the downloaded 2 files. Do you know the linux command for this ?
 - Check the permission with `ls -l` command.
