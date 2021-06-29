@@ -14,14 +14,14 @@ You have to finish [Robot control (2)](robot_control/robot_control_02.md).
 
 ## ROS navigation
 
-Thanks to the [`ROS navigation`meta-package](http://wiki.ros.org/navigation), it is very simple to make a navigation program.  
+Using the [`ROS navigation`meta-package](http://wiki.ros.org/navigation), it is very simple to make a navigation program.  
 We have learned to use `/cmd_vel` topic for velocity control. It is useful to make simple robot movement. On the other hand, `ROS navigation` presents functionalties including global path planning and obstacle avoidance for autonomus navigation.  The node `move_base` provides the functionalities. Your program will use the `move_base` with following procedures,
 
 1. Connect `move_base`.
 2. Wait until connection to `move_base`.
 3. Send navigation goal to the `move_base` and wait the result.
 
-## Excercise
+## Practice [Simple navigation]
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
 ```
 
-## Run
+### Run
 
 At first, launch the simulator.
 
@@ -98,8 +98,9 @@ $ roslaunch oit_stage_ros navigation.launch
 
 After a while run the `navigation.py`.
 
-- Cafully check the screen of `Rviz`.
+- Carefully check the screen of `Rviz`.
 - Planned global path will appear as a red curve, and the robot go to the designated goal.
+- The warning message like `the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'` may appear, but it's OK.
 
 ```shell
 $ rosrun oit_pbl_ros_samples navigation.py
@@ -112,12 +113,20 @@ $ rosrun oit_pbl_ros_samples navigation.py
 
 ![2021-06-17_185435.png](./2021-06-17_185435.png)
 
-## Question (1)
+- If your robot stucks open linux terminal emulator and run the following command. The command will re-start `move_base` node.
+
+```shell
+$ rosnode kill move_base
+killing /move_base
+killed
+```
+
+## Exercise (robot control 3-1)
 
 - Make arbitrary navigation goals, about 4 points, and make a program to navigate to the goals sequencialy.
-- You can get coordinate on the map from `RViz` with following procedure,
+- You can get coordinate of the arbitrary point on the map from `RViz` with the following procedure.
 
-### How to get coordinate on the map
+### How to get coordinate of the arbitrary points on the map
 
 `Publish Point` button on the `RViz` can be used.
 Open a new terminal emulator and type the command.
@@ -132,7 +141,7 @@ Press `Publish Point` on the `RViz`. After that click an arbitrary point on the 
 
 ![2018-11-10_17-12-28.png](./2018-11-10_17-12-28.png)
 
-The following information of the map points will show on the emulator used to run the `rostopic echo /clicked_point` command.  
+The following information of the map points will be shown on the emulator used to run the `rostopic echo /clicked_point` command.  
 You can use the `x` and `y` values.
 
 ```shell
@@ -155,7 +164,7 @@ point:
 - ***Important points***
   - Do not use `Stage` to get coordinates.
 
-### Robot's direction
+### Additional explanation for robot's direction
 
 Check this code.
 
@@ -164,7 +173,7 @@ Check this code.
         navigation(ac, 3, 3.6, math.radians(90))
 ```
 
-The third argment is a disired direction of the robot which have reached to the navigation goal.
+The third argument is a desired direction of the robot which have reached to the navigation goal.
 In this case, the 'direction' will represents the angle on the 'map' coordinate system.
 
 If you have computer graphics knowledge, you may rephrase 'map' coordinate system as the 'world' coordinate system.
@@ -172,11 +181,20 @@ If you have computer graphics knowledge, you may rephrase 'map' coordinate syste
 The angle represents with -180 degrees to +180 degrees.  
 Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis is zero degree, and counter clockwise direction is plus angles.
 
-![2020-10-13_081605.png](./2020-10-13_081605.png)
+![2021-06-29_111645.png](./2021-06-29_111645.png)
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot navigation programming)
 
 - It's OK, you can finish the question 1.
+
+## Question (robot control 3)
+
+- Change the third argument of the following code, and check the direction which the robot faces when the navigation finished.
+
+```python
+        # send navigation goal x, y, theta
+        navigation(ac, 3, 3.6, math.radians(90))
+```
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## Objectives
 
-This page explains how to control the robot with command and tools.
+This page explains how to control the robot with command, keyboard and mouse.
 
 ## Prerequisite
 
@@ -112,7 +112,7 @@ You can send velocities to the robot by dragging your mouse on the 'Mouse Teleop
 
 - **Important** You have to press close button on the GUI 'Mouse Teleop' windows to terminalte `mouse_teleop.py`.
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot control)
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot control 1)
 
 - It's OK, you can control the robot with command, keyboard and mouse.
 

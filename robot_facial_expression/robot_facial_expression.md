@@ -112,7 +112,7 @@ $ roslaunch oit_stage_ros navigation.launch
 
 After a while run the `face.py`.
 
-- Cafully check the screen of `Rviz`.
+- Carefully check the screen of `Rviz`.
 - The robot's face changes every three seconds.
 
 ```shell
