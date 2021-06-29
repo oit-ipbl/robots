@@ -15,7 +15,7 @@ You have to finish [Robot control (3)](robot_control/robot_control_03.md).
 ## Laser Range Finder
 
 Laser Range Finder (LRF) measures distances from robot to surrounding obstacles.  
-Our simulater simulates the following sensor.
+Our simulater simulates the following sensor (LRF).
 
 [YDLIDAR X4](https://www.ydlidar.com/products/view/5.html)
 
@@ -30,10 +30,11 @@ Virtualized vision sensor which can grab pictures from simulation world of `Stag
 
 ## Wheel odometry
 
-Wheel odometry can estimate robot's pose with rotery encoder attached on wheels.  
-It has some errors, and when you drag the robot on the `Stage`, the position will become meaningless.
+Wheel odometry can estimate robot's pose with rotary encoder attached on wheels.  
+It has some errors, and when you drag the robot on the `Stage`, the position will become meaningless.  
+However, the odometry data can be used to measure the movement distance of the robot in short range.
 
-## Excercise
+## Practice [Simple sensor]
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
@@ -123,7 +124,7 @@ class Sensors(object):
     def process(self):
         rate=rospy.Rate(20)
         tm = rospy.Time.now()
-        while (rospy.Time.now().to_sec() - tm.to_sec()) < 10:
+        while (rospy.Time.now().to_sec() - tm.to_sec()) < 100:
             self.process_laser(self.laser.get_msg())
             self.process_odom(self.odom.get_msg())
             self.process_img(self.img.get_msg())
@@ -151,7 +152,7 @@ if __name__ == '__main__':
 
 ```
 
-## Run
+### Run
 
 At first, launch the simulator.
 
@@ -162,6 +163,7 @@ $ roslaunch oit_stage_ros navigation.launch
 After a while run the `sensors.py`.
 
 - You can see the information about received sensor data.
+- This program will run about 100 seconds and stop automatically.
 
 ```shell
 $ rosrun oit_pbl_ros_samples sensors.py
@@ -179,7 +181,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624081859.014337, 16.600000]: msg.ranges[0] = 1.412500
 ```
 
-## Question (1)
+## Exercise [Sensor1-1]
 
 - Run the `sensors.py` and control the robot via command line.
   - See, [Robot control (1)](../robot_control/robot_control_01.md).
@@ -215,24 +217,18 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624082236.510218, 394.100000]: msg.width = 700, msg.height = 540
 ```
 
-## Question (2)
+## Exercise [Sensor1-2]
 
 - Output the distance to right side obstacles of the robot.
   - Try left side and front direction as well.
   - `rospy.loginfo("msg.ranges[0] = %f", msg.ranges[0])` shows the distance to the wall behind of the robot.
-- You can check the distances by drag the mobable objects on the `Stage`.
+- You can check the distances by drag the movable objects on the `Stage`.
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data)
+![2021-06-19_161332.png](./2021-06-19_161332.png)
+
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 1)
 
 - It's OK, you can finish the question 1 and 2.
-
-## Challenge (1)
-
-- Check another OpenCV functions and try various image filters, such as canny, sobel and so on.
-
-## Challenge (2) difficult
-
-- Turn the robot to specific colored object.
 
 ---
 

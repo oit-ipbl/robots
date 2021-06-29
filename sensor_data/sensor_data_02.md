@@ -12,13 +12,15 @@ This page explains how to make a simple image processing program.  We will add s
 
 You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
 
-## Excercise
+## Practice [image processing for robot]
 
 Edit the `sensors.py`.
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`.
 
 Additional codes are as follows,
+
+### Add `import cv2`
 
 ```python
 #!/usr/bin/env python
@@ -32,7 +34,11 @@ from nav_msgs.msg import Odometry
 
 import cv2  # add
 from cv_bridge import CvBridge  # add
+```
 
+### Add initialization of `CvBridge`
+
+```shell
 class Sensors(object):
     def __init__(self):
         self.laser = SensorMessageGetter("/base_scan", LaserScan)
@@ -41,8 +47,11 @@ class Sensors(object):
         # add
         self.cv_bridge = CvBridge()
         self.image_pub = rospy.Publisher("/image_mod", Image, queue_size=1)
-....
+```
 
+### Add extraction of blue region
+
+```python
     def process_img(self, msg):
         if msg:
             rospy.loginfo("Recv sensor data. type = %s", type(msg))
@@ -59,15 +68,18 @@ class Sensors(object):
                 self.image_pub.publish(send)
             except Exception as e:
                 rospy.logerr("%s:%s", rospy.get_name(), str(e))
-...                
+```
+
+### Change program running time
+
+```python
     def process(self):
         rate = rospy.Rate(20)
         tm = rospy.Time.now()
-        while (rospy.Time.now().to_sec() - tm.to_sec()) < 100: # change 10 -> 100
-
+        while (rospy.Time.now().to_sec() - tm.to_sec()) < 1000: # change 100 -> 1000
 ```
 
-## Run
+### Run
 
 At first, launch the simulator.
 
@@ -105,13 +117,17 @@ Select `image_mod`, and you can see the image processing result, which shows ext
 
 ![2021-06-19_154610.png](./2021-06-19_154610.png)
 
-## Question (1)
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 2)
+
+- It's OK, you can finish the question 1.
+
+## Challenge (sensor data 2-1)
 
 - Try to extract yellow and green objects like as the blue block.
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data)
+## Challenge (sensor data 2-2: difficult)
 
-- It's OK, you can finish the question 1.
+- Turn the robot to the specific colored object.
 
 ---
 
