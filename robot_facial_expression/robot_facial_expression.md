@@ -133,15 +133,16 @@ $ rosrun oit_pbl_ros_samples face.py
 
 ## Challenge (Face1)
 
-- Use other images for the robot face.
+- Edit or replace robot's face image files.
 
 ```shell
 $ roscd oit_stage_ros/images/faces
 $ ls
-happy.png  normal.png  sad.png # The face images. Edit them.
+happy.png  normal.png  sad.png # The face images. Edit them, or replace to your own robot's face image. Do not change the file names.
 ```
 
-- 640x480 `png` image can be used for this. However, other image format may be acceptable. Please try.
+- 640x480 `png` image can be used for this. However, other image size may be acceptable. Please try.
+  - Do not change the file names.
 - See [Direct access directory and files inside the ROS container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#direct-access-directory-and-files-inside-the-ros-container) to edit the images from Windows.
 
 ## Challenge (Face2: difficult)
