@@ -261,7 +261,7 @@ wall_block(
 )
 ```
 
-- You can add a new block like as follows,
+- You can add a new block like as follows. As a challenge exercise, let's change color and block position by reading the following reference manual.
 
 ```text
 rect_block(
@@ -270,9 +270,14 @@ rect_block(
 )
 ```
 
+The block definition includes pose and color.  
+These colr names are from the built in X11 colr database `rgb.txt`. This is built in to Linux. The file rgb.txt can normally be found at `/usr/share/X11/rgb.txt` assuming it's properly installed.
+
+The explanation of 'pose' is [here](https://player-stage-manual.readthedocs.io/en/stable/WORLDFILES/#3215-ranger-device).
+
 ## Referecne
 
-- [How to Use Player/Stage](http://player-stage-manual.readthedocs.io/en/stable/)
+- [How to Use Player/Stage| Building a World](https://player-stage-manual.readthedocs.io/en/stable/WORLDFILES/)
 
 ---
 
