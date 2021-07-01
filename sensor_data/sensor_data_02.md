@@ -14,9 +14,7 @@ You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
 
 ## Practice (image processing for robot)
 
-Edit the `sensors.py`.
-
-- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`.
+Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
 
 Additional codes are as follows,
 

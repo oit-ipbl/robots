@@ -54,9 +54,7 @@ $ chmod u+x face.py
 $ cd ..
 ```
 
-Edit the `face.py`.
-
-- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `face.py`.
+Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `face.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
 
 Type the following template. It's OK copy and paste.
 

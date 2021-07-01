@@ -34,9 +34,7 @@ $ touch navigation.py
 $ chmod u+x navigation.py
 ```
 
-Edit the `navigation.py`.
-
-- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `navigation.py`.
+Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `navigation.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
 
 Type the following template. It's OK copy and paste.
 
