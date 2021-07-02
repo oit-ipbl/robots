@@ -271,7 +271,7 @@ rect_block(
 The block definition includes pose and color.  
 These color names are from the built in X11 color database `rgb.txt`. This is built in to Linux. The file rgb.txt can normally be found at `/usr/share/X11/rgb.txt` assuming it's properly installed.
 
-The explanation of 'pose' is [here](https://player-stage-manual.readthedocs.io/en/stable/WORLDFILES/#3215-ranger-device).
+The explanation of `pose` is [here](https://player-stage-manual.readthedocs.io/en/stable/WORLDFILES/#3215-ranger-device).
 
 ## Referecne
 
