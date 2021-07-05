@@ -171,7 +171,7 @@ Check this code.
         navigation(ac, 3, 3.6, math.radians(90))
 ```
 
-The third argument is a desired direction of the robot which have reached to the navigation goal.
+The fourth argument is a desired direction of the robot which have reached to the navigation goal.
 In this case, the 'direction' will represents the angle on the 'map' coordinate system.
 
 If you have computer graphics knowledge, you may rephrase 'map' coordinate system as the 'world' coordinate system.
@@ -187,7 +187,7 @@ Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis 
 
 ## Challenge (robot control 3)
 
-- Change the third argument of the following code, and check the direction which the robot faces when the navigation finished.
+- Change the fourth argument of the following code, and check the direction which the robot faces when the navigation finished.
 
 ```python
         # send navigation goal x, y, theta
