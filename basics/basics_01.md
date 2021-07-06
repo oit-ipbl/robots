@@ -163,7 +163,7 @@ listener.py                               100%[=================================
 
 Edit the `talker.py` and `listener.py`.
 
-- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit the files in `~/catkin_ws/src/oit_pbl_ros_samples/scripts` directory.
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by [Visual Studio Code editor](https://github.com/oit-ipbl/portal/blob/e8e2a479dbe0f6c5494f63780d674446016e96c2/setup/remote_with_vscode.md), and edit the files in `~/catkin_ws/src/oit_pbl_ros_samples/scripts` directory.
 
 Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 
