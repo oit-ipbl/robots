@@ -10,7 +10,7 @@ This page explains how to use simulated sensors.
 
 ## Prerequisite
 
-You have to finish [Robot control (3)](robot_control/robot_control_03.md).
+You have to finish [Robot control (3)](../robot_control/robot_control_03.md).
 
 ## Laser Range Finder
 

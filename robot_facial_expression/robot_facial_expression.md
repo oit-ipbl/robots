@@ -10,7 +10,7 @@ This page explains how to make a program which can change the robot face.
 
 ## Prerequisite
 
-You have to finish [Robot control (3)](robot_control/robot_control_03.md).
+You have to finish [Robot control (3)](../robot_control/robot_control_03.md).
 
 ## Change the robot face with command (again)
 

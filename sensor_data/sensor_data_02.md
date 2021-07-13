@@ -10,7 +10,7 @@ This page explains how to make a simple image processing program.  We will add s
 
 ## Prerequisite
 
-You have to finish [Sensor data (1)](sensor_data/sensor_data_01.md).
+You have to finish [Sensor data (1)](./sensor_data_01.md).
 
 ## Practice (image processing for robot)
 

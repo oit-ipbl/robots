@@ -10,7 +10,7 @@ This page explains how to make a program which sends velocities to the robot via
 
 ## Prerequisite
 
-You have to finish [Robot control (1)](robot_control/robot_control_01.md).
+You have to finish [Robot control (1)](./robot_control_01.md).
 
 ## Practice (go forward and turn)
 

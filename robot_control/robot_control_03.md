@@ -10,7 +10,7 @@ This page explains how to make make a program for autonomus navigation.
 
 ## Prerequisite
 
-You have to finish [Robot control (2)](robot_control/robot_control_02.md).
+You have to finish [Robot control (2)](./robot_control_02.md).
 
 ## ROS navigation
 

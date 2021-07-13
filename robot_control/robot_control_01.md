@@ -10,7 +10,7 @@ This page explains how to control the robot with command, keyboard and mouse.
 
 ## Prerequisite
 
-You have to finish [ROS basics](basics/basics_01.md).
+You have to finish [ROS basics](../basics/basics_01.md).
 
 ## Launch simulator
 
