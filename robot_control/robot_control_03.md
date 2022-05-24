@@ -122,7 +122,7 @@ killed
 ## Exercise (robot control 3-1)
 
 - Make arbitrary navigation goals, about 4 points, and make a program to navigate to the goals sequencialy.
-- You can get coordinate of the arbitrary point on the map from `RViz` with the following procedure.
+  - You can get coordinate of the arbitrary point on the map from `RViz` with the following procedure.
 
 ### How to get coordinate of the arbitrary points on the map
 
@@ -159,8 +159,8 @@ point:
 ---
 ```
 
-- ***Important points***
-  - Do not use `Stage` to get coordinates.
+> **Note**
+> Do not use `Stage` to get coordinates.
 
 ### Additional explanation for robot's direction
 
@@ -181,7 +181,7 @@ Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis 
 
 ![2021-06-29_111645.png](./2021-06-29_111645.png)
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot navigation programming)
+## :exclamation:Checkpoint(robot navigation programming)
 
 - It's OK, you can finish the Exercise (robot control 3-1).
 

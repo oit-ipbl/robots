@@ -57,15 +57,15 @@ Press Ctrl-C to interrupt
 Done checking log file disk usage. Usage is <1GB.
 
 started roslaunch server http://ubuntu:34303/
-ros_comm version 1.14.3
+ros_comm version 1.15.14
 
 
 SUMMARY
 ========
 
 PARAMETERS
- * /rosdistro: melodic
- * /rosversion: 1.14.3
+ * /rosdistro: notic
+ * /rosversion: 1.15.14
 
 NODES
 
@@ -78,9 +78,9 @@ process[rosout-1]: started with pid [7310]
 started core service [/rosout]
 ```
 
-Check the messages. You can see the phrase, `'* /rosdistro: melodic'`.
+Check the messages. You can see the phrase, `'* /rosdistro: noetic'`.
 
-### [Melodic Morenia](http://wiki.ros.org/melodic)
+### [Noetic Ninjemys](http://wiki.ros.org/noetic)
 
 One of the LTS distribution of `ROS`.
 
@@ -94,7 +94,7 @@ shutting down processing monitor...
 done
 ```
 
-### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(ROS master)
+### :exclamation:Checkpoint(ROS master)
 
 - It's OK, you can run and terminlate `ROS master`.
 
@@ -108,7 +108,7 @@ Type the following command.
 $ roscd oit_pbl_ros_samples/scripts
 ```
 
-### Exercise (ROS basics 1)
+### Exercise (Linux command 1)
 
 - Check the current working directory. Do you know the linux command for this ?
 
@@ -120,10 +120,10 @@ Let's go to another packages' directories by this command.
 ```shell
 $ roscd navigation
 $ pwd
-/opt/ros/melodic/share/navigation
+/opt/ros/noetic/share/navigation
 $ roscd rviz
 $ pwd
-/opt/ros/melodic/share/rviz
+/opt/ros/noetic/share/rviz
 $ roscd oit_pbl_ros_samples/scripts # Return to our space.
 ```
 
@@ -173,7 +173,7 @@ Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 # Software License Agreement (BSD License)
 ```
 
-### Exercise (ROS basics 2)
+### Exercise (Linux command 2)
 
 - Add executable permission to the downloaded 2 files. Do you know the linux command for this ?
 - Check the permission with `ls -l` command.
@@ -325,7 +325,7 @@ if __name__ == '__main__':
 
 - Terminate `ROS master`, `talker.py`, `listener.py` with `Ctrl+C`.
 
-### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(talker, listener and rqt_graph)
+### :exclamation:Checkpoint(talker, listener and rqt_graph)
 
 - It's OK, you can run the talker and listener with rqt_graph visualization.
 

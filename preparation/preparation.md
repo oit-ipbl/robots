@@ -55,7 +55,7 @@ $ roslaunch oit_stage_ros navigation.launch
 
 ![2020-02-07_11-20-18.png](./2020-02-07_11-20-18.png)
 
-#### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(simulator)
+#### :exclamation:Checkpoint(simulator)
 
 - It's OK, you can run the simulator.
 
@@ -77,7 +77,7 @@ Press `2D Nav Goal` on the `RViz`, and drag from desired goal postion to desired
 
 ![2020-02-07_11-58-27.svg.png](./2020-02-07_11-58-27.svg.png)
 
-#### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(navigation)
+#### :exclamation:Checkpoint(navigation)
 
 - It's OK, you can use the navigation.
 
@@ -91,7 +91,7 @@ You can see the blue block on the virtual camera view, and laser range finder's 
 
 ![2021-06-21_123650.png](./2021-06-21_123650.png)
 
-#### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(move the objects)
+#### :exclamation:Checkpoint(move the objects)
 
 - It's OK, you can move objects on the `Stage`.
 
@@ -105,7 +105,7 @@ You can see the blue block on the virtual camera view, and laser range finder's 
 
 ![2021-01-15_182739.png](./2021-04-29_090555.png)
 
-### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(change the face)
+### :exclamation:Checkpoint(change the face)
 
 - It's OK, you can show the robot's faces, happy, normal and sad.
 

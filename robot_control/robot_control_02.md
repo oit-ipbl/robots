@@ -108,7 +108,7 @@ $ rosrun oit_pbl_ros_samples robot_control.py
   - Go forward (some seconds) -> 90 degrees turn -> Go forward (some seconds) ...
 - Implement clockwise and counter clockwise square movement.
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot control 2)
+## :exclamation:Checkpoint(robot control 2)
 
 - It's OK, you can finish the exercise 1 and 2.
 
