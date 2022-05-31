@@ -119,7 +119,7 @@ killing /move_base
 killed
 ```
 
-## Exercise (robot control 3-1)
+## :o:Exercise (navigate robot to multiple points)
 
 - Make arbitrary navigation goals, about 4 points, and make a program to navigate to the goals sequencialy.
   - You can get coordinate of the arbitrary point on the map from `RViz` with the following procedure.
@@ -181,11 +181,8 @@ Zoom up the `RViz` screen and you can see an axis named `map`. The X (red) axis 
 
 ![2021-06-29_111645.png](./2021-06-29_111645.png)
 
-## :exclamation:Checkpoint(robot navigation programming)
 
-- It's OK, you can finish the Exercise (robot control 3-1).
-
-## Challenge (robot control 3)
+## :o:Challenge (robot control 3)
 
 - Change the fourth argument of the following code, and check the direction which the robot faces when the navigation finished.
 

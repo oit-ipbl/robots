@@ -8,14 +8,9 @@
 
 This page explains how to make a program which can change the robot face.
 
-## Prerequisite
+## Change the robot face with command
 
-You have to finish [Robot control (3)](../robot_control/robot_control_03.md).
-
-## Change the robot face with command (again)
-
-At first, launch the simulator.  
-Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following command.
+At first, launch the simulator. Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following command.
 
 ```shell
 $ roslaunch oit_stage_ros navigation.launch
@@ -119,17 +114,13 @@ $ rosrun oit_pbl_ros_samples face.py
 [INFO] [1623925482.101090, 2109.000000]: /face:Exiting
 ```
 
-## Exercise (face 1)
+## :o:Exercise (face 1)
 
 - Add change face functionality into the `navigation.py`.
   - For example, when robot have reached a goal, the robot express `happy` face for 5 seconds.
   - After that, reset to `normal` face and go to the next goal.
 
-### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(robot facial exprssion programming)
-
-- It's OK, you can finish the Exercise (face 1).
-
-## Challenge (face 1)
+## :o:Challenge (replace face images)
 
 - Edit or replace robot's face image files.
 
@@ -143,7 +134,7 @@ happy.png  normal.png  sad.png # The face images. Edit them, or replace to your 
   - Do not change the file names.
 - See [Direct access directory and files inside the ROS container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#direct-access-directory-and-files-inside-the-ros-container) to edit the images from Windows.
 
-## Challenge (face 2: difficult)
+## Challenge (add face reaction)
 
 - Add other facial expressions than `happy`, `normal`, `sad`. e.g. `surprise`.
 

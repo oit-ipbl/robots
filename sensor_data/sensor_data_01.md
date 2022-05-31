@@ -12,7 +12,7 @@ This page explains how to use simulated sensors.
 
 You have to finish [Robot control (3)](../robot_control/robot_control_03.md).
 
-## Laser Range Finder
+## Virtual Laser Range Finder
 
 Laser Range Finder (LRF) measures distances from robot to surrounding obstacles.  
 Our simulater simulates the following sensor (LRF).
@@ -34,7 +34,7 @@ Wheel odometry can estimate robot's pose with rotary encoder attached on wheels.
 It has some errors, and when you drag the robot on the `Stage`, the position will become meaningless.  
 However, the odometry data can be used to measure the movement distance of the robot in short range.
 
-## Practice (simple sensor)
+## :o:Exercise (simple sensor)
 
 Make a python file inside of the `oit_pbl_ros_samples` package.  
 Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
@@ -179,7 +179,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624081859.014337, 16.600000]: msg.ranges[0] = 1.412500
 ```
 
-## Exercise (sensor 1-1)
+## :o:Exercise (multiple sensors)
 
 - Run the `sensors.py` and control the robot via command line.
   - See, [Robot control (1)](../robot_control/robot_control_01.md).
@@ -216,7 +216,7 @@ $ rosrun oit_pbl_ros_samples sensors.py
 [INFO] [1624082236.510218, 394.100000]: msg.width = 700, msg.height = 540
 ```
 
-## Exercise (sensor 1-2)
+## :o:Exercise (distance sensor)
 
 - Output the distance to right side obstacles of the robot.
   - Try left side and front direction as well.
@@ -225,11 +225,8 @@ $ rosrun oit_pbl_ros_samples sensors.py
 
 ![2021-06-19_161332.png](./2021-06-19_161332.png)
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 1)
 
-- It's OK, you can finish the Exercise (sensor 1-1) and Exercise (sensor 1-2).
-
-## Challenge (sensor data1-1: difficult)
+## :o:Challenge (sensor data: difficult)
 
 - Let's add a movable object. The simulation definitions are written in *.world file.
 

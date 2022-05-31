@@ -55,7 +55,7 @@ $ roslaunch oit_stage_ros navigation.launch
 
 ![2020-02-07_11-20-18.png](./2020-02-07_11-20-18.png)
 
-#### :exclamation:Checkpoint(simulator)
+#### :o:Checkpoint(simulator)
 
 - It's OK, you can run the simulator.
 
@@ -77,7 +77,7 @@ Press `2D Nav Goal` on the `RViz`, and drag from desired goal postion to desired
 
 ![2020-02-07_11-58-27.svg.png](./2020-02-07_11-58-27.svg.png)
 
-#### :exclamation:Checkpoint(navigation)
+#### :o:Checkpoint(navigation)
 
 - It's OK, you can use the navigation.
 
@@ -91,23 +91,10 @@ You can see the blue block on the virtual camera view, and laser range finder's 
 
 ![2021-06-21_123650.png](./2021-06-21_123650.png)
 
-#### :exclamation:Checkpoint(move the objects)
+#### :o:Checkpoint(move the objects)
 
 - It's OK, you can move objects on the `Stage`.
 
-## Robot's facial expression
-
-1. If you closed the robot simulator, launch it agein with `roslaunch oit_stage_ros navigation.launch` command.
-    - The command also launches `~/catkin_ws/src/oit_stage_ros/scripts/face_image_publisher.py`, which publishes face image.
-    - You can see the robot's face on the `RViz`.
-2. Open another emulator and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
-    - You can use `'sad'` or `'normal'` alternatively.
-
-![2021-01-15_182739.png](./2021-04-29_090555.png)
-
-### :exclamation:Checkpoint(change the face)
-
-- It's OK, you can show the robot's faces, happy, normal and sad.
 
 ## Terminate the simulator
 

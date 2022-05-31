@@ -97,22 +97,19 @@ $ rosrun oit_pbl_ros_samples robot_control.py
 [INFO] [1623920874.284430, 14.500000]: /robot_control:Exiting
 ```
 
-## Exercise (robot control 2-1)
+## :o:Exercise (robot control 2-1)
 
 - Modify `robot_control.py` to make the following robot's behavior'.
 - Go forward (some seconds) -> Turn (about 360 degrees) -> Go forward (some seconds).
 
-## Exercise (robot control 2-2)
+## :o:Exercise (robot control 2-2)
 
 - Modify `robot_control.py` to make a square movement of the robot
   - Go forward (some seconds) -> 90 degrees turn -> Go forward (some seconds) ...
 - Implement clockwise and counter clockwise square movement.
 
-## :exclamation:Checkpoint(robot control 2)
 
-- It's OK, you can finish the exercise 1 and 2.
-
-## Challenge (robot control 2)
+## :o:Challenge (robot control 2)
 
 - Modify `robot_control.py` to assign arbitral velocity values to both `cmd.linear.x` and `cmd.angular.z`, and check the robot's movement.
 

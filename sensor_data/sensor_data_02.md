@@ -1,4 +1,4 @@
-# Sensor data (2)
+# Image Processing by Robot
 
 [README](../README.md)
 
@@ -8,9 +8,122 @@
 
 This page explains how to make a simple image processing program.  We will add some codes to `sensors.py`.
 
-## Prerequisite
+## Preparation(display sensor data)
+- You can display various data sensed by the robot on the console.
+  - For more information about data sensing, refer to the [sensor data](./sensor_data_01.md)
+- Make a python file `sensors.py` inside of the `oit_pbl_ros_samples` package.  
+Open a linux terminal emulator. See [Use terminal Emulator in the ROS Container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#use-terminal-emulator-in-the-ros-container), and input the following commands.
+  - If you already have created the `sensors.py`, please use it.
 
-You have to finish [Sensor data (1)](./sensor_data_01.md).
+```shell
+$ roscd oit_pbl_ros_samples/scripts
+$ pwd
+/home/ubuntu/catkin_ws/src/oit_pbl_ros_samples/scripts
+$ touch sensors.py
+$ chmod u+x sensors.py
+```
+
+- Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
+
+
+Type the following template. It's OK copy and paste.
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+import rospy
+import tf
+from sensor_msgs.msg import LaserScan, Image
+from nav_msgs.msg import Odometry
+
+
+class SensorMessageGetter(object):
+    def __init__(self, topic, msg_type, msg_wait=1):
+        self.msg_wait = msg_wait
+        self.topic = topic
+        self.msg_type = msg_type
+
+    def get_msg(self):
+        message = None
+        try:
+            message = rospy.wait_for_message(
+                self.topic, self.msg_type, self.msg_wait)
+        except rospy.exceptions.ROSException as e:
+            rospy.logdebug(e)
+        return message
+
+
+class Sensors(object):
+    def __init__(self):
+        self.laser = SensorMessageGetter("/base_scan", LaserScan)
+
+    def process_laser(self, msg):
+        if msg:
+            rospy.loginfo("Recv sensor data. type = %s", type(msg))
+            # check reference
+            # http://docs.ros.org/api/sensor_msgs/html/msg/LaserScan.html
+            # len(msg.ranges) is range senseor's data count.
+            rospy.loginfo("len(msg.ranges) = %d", len(msg.ranges))
+            # msg.ranges[i] is distance mesurement of index i.
+            rospy.loginfo("msg.ranges[0] = %f", msg.ranges[0])
+
+    def process(self):
+        rate=rospy.Rate(20)
+        tm = rospy.Time.now()
+        while (rospy.Time.now().to_sec() - tm.to_sec()) < 100:
+            self.process_laser(self.laser.get_msg())
+            rate.sleep()
+
+
+def main():
+    script_name=os.path.basename(__file__)
+    rospy.init_node(os.path.splitext(script_name)[0])
+    rospy.sleep(0.5)  # rospy.Time.now() returns 0, without this sleep.
+
+    node=Sensors()
+    rospy.loginfo("%s:Started", rospy.get_name())
+
+    node.process()
+    rospy.loginfo("%s:Exiting", rospy.get_name())
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except Exception as e:
+        rospy.logerr("%s:%s", rospy.get_name(), str(e))
+        exit(1)
+
+```
+
+### Run
+
+At first, launch the simulator.
+
+```shell
+$ roslaunch oit_stage_ros navigation.launch
+```
+
+After a while run the `sensors.py`.
+
+- You can see the information about received sensor data.
+- This program will run about 100 seconds and stop automatically.
+
+```shell
+$ rosrun oit_pbl_ros_samples sensors.py
+[INFO] [1624081858.601793, 16.200000]: /sensors:Started
+[INFO] [1624081858.706859, 16.300000]: Recv sensor data. type = <class 'sensor_msgs.msg._LaserScan.LaserScan'>
+[INFO] [1624081858.710373, 16.300000]: len(msg.ranges) = 720
+[INFO] [1624081858.714078, 16.300000]: msg.ranges[0] = 1.412500
+[INFO] [1624081859.008587, 16.600000]: Recv sensor data. type = <class 'sensor_msgs.msg._LaserScan.LaserScan'>
+[INFO] [1624081859.011822, 16.600000]: len(msg.ranges) = 720
+[INFO] [1624081859.014337, 16.600000]: msg.ranges[0] = 1.412500
+:
+:
+```
+
 
 ## Practice (image processing for robot)
 
@@ -40,8 +153,6 @@ from cv_bridge import CvBridge  # add
 class Sensors(object):
     def __init__(self):
         self.laser = SensorMessageGetter("/base_scan", LaserScan)
-        self.odom = SensorMessageGetter("/odom", Odometry)
-        self.img = SensorMessageGetter("/image", Image)
         # add
         self.cv_bridge = CvBridge()
         self.image_pub = rospy.Publisher("/image_mod", Image, queue_size=1)
@@ -115,7 +226,7 @@ Select `image_mod`, and you can see the image processing result, which shows ext
 
 ![2021-06-19_154610.png](./2021-06-19_154610.png)
 
-## Exercise (sensor 2-1)
+## :o:Exercise (image processing)
 
 - Try to extract yellow and green objects like as the blue block.
 - Important point of the code is here,
@@ -129,11 +240,8 @@ Select `image_mod`, and you can see the image processing result, which shows ext
 
 - Adjust the hue value in `cv2.inRange(hsv, (100, 200, 200), (140, 255, 255))` to extract other colored objects.
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)Checkpoint(sensor data 2)
 
-- It's OK, you can finish the Exercise (sensor 2-1).
-
-## Challenge (sensor 2-1: difficult)
+## Challenge (control robot by image processing)
 
 - Turn the robot to the specific colored object.
 

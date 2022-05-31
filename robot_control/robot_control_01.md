@@ -39,7 +39,7 @@ $ rostopic list
 ...
 ```
 
-## Control the robot via command line
+## :o:Exercise(Control the robot via command line)
 
 `rostopic pub` command is used to publish the `cmd_vel` topic.
 
@@ -84,7 +84,7 @@ angular:
 
 Terminate by `Ctrl+C`.
 
-## Control the robot with key board
+## :o:Exercise(Control the robot with key board)
 
 Re-start the simulator, and open another terminal emulator for the following command.
 
@@ -98,7 +98,7 @@ On the terminal, use the following 4 keys to control the robot.
 
 Terminate the `teleop_twist_keyboard.py` by `Ctrl+C`.
 
-## Control the robot with mouse
+## :o: Exercise(Control the robot with mouse)
 
 Type the following command. You can see one GUI window named 'Mouse Teleop'.
 
@@ -112,9 +112,6 @@ You can send velocities to the robot by dragging your mouse on the 'Mouse Teleop
 
 - **Important** You have to press close button on the GUI 'Mouse Teleop' windows to terminalte `mouse_teleop.py`.
 
-## :exclamation:Checkpoint(robot control 1)
-
-- It's OK, you can control the robot with command, keyboard and mouse.
 
 ---
 
