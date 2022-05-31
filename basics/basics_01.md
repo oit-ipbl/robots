@@ -94,7 +94,7 @@ shutting down processing monitor...
 done
 ```
 
-### :exclamation:Checkpoint(ROS master)
+### :o:Checkpoint(ROS master)
 
 - It's OK, you can run and terminlate `ROS master`.
 
@@ -108,7 +108,7 @@ Type the following command.
 $ roscd oit_pbl_ros_samples/scripts
 ```
 
-### Exercise (Linux command 1)
+### :o:Exercise (Linux command 1)
 
 - Check the current working directory. Do you know the linux command for this ?
 
@@ -173,7 +173,7 @@ Insert `# -*- coding: utf-8 -*-` at the top of the files like as follows,
 # Software License Agreement (BSD License)
 ```
 
-### Exercise (Linux command 2)
+### :o:Exercise (Linux command 2)
 
 - Add executable permission to the downloaded 2 files. Do you know the linux command for this ?
 - Check the permission with `ls -l` command.
@@ -325,7 +325,7 @@ if __name__ == '__main__':
 
 - Terminate `ROS master`, `talker.py`, `listener.py` with `Ctrl+C`.
 
-### :exclamation:Checkpoint(talker, listener and rqt_graph)
+### :o:Checkpoint(talker, listener and rqt_graph)
 
 - It's OK, you can run the talker and listener with rqt_graph visualization.
 
