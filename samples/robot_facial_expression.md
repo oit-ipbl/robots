@@ -21,7 +21,7 @@ $ roslaunch oit_stage_ros navigation.launch
 - Open another terminal and type `rostopic pub /robot_face_type std_msgs/String "data: 'happy'" -1`, that changes robot's face.
   - You can use `'sad'` or `'normal'` alternatively.
 
-![2021-01-15_182739.png](./2021-04-29_090555.png)
+![2021-04-29_090555.png](./2021-04-29_090555.png)
 
 ## Let's think
 

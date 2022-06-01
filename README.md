@@ -13,6 +13,6 @@
   - [Robot control (3)](robot_control/robot_control_03.md)
 
 - Sample Programs
-  - [Robot facial expression](robot_facial_expression/robot_facial_expression.md)
-  - [Sensor data](sensor_data/sensor_data_01.md)
-  - [Image Processing by Robot](sensor_data/sensor_data_02.md)
+  - [Robot facial expression](samples/robot_facial_expression.md)
+  - [Sensor data](samples/sensor_data_01.md)
+  - [Image Processing by Robot](samples/sensor_data_02.md)
