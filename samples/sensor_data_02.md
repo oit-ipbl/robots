@@ -9,6 +9,7 @@
 This page explains how to make a simple image processing program.  We will add some codes to `sensors.py`.
 
 ## Preparation(display sensor data)
+
 - You can display various data sensed by the robot on the console.
   - For more information about data sensing, refer to the [sensor data](./sensor_data_01.md)
 - Make a python file `sensors.py` inside of the `oit_pbl_ros_samples` package.  
@@ -24,7 +25,6 @@ $ chmod u+x sensors.py
 ```
 
 - Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
-
 
 Type the following template. It's OK copy and paste.
 
@@ -58,6 +58,7 @@ class SensorMessageGetter(object):
 class Sensors(object):
     def __init__(self):
         self.laser = SensorMessageGetter("/base_scan", LaserScan)
+        self.img = SensorMessageGetter("/image", Image)
 
     def process_laser(self, msg):
         if msg:
@@ -124,7 +125,6 @@ $ rosrun oit_pbl_ros_samples sensors.py
 :
 ```
 
-
 ## Practice (image processing for robot)
 
 Open `~/catkin_ws/src/oit_pbl_ros_samples/` by Visual Studio Code editor, and edit `sensors.py`. See [Developing inside the ROS container with VSCode](https://github.com/oit-ipbl/portal/blob/main/setup/remote_with_vscode.md).
@@ -153,6 +153,7 @@ from cv_bridge import CvBridge  # add
 class Sensors(object):
     def __init__(self):
         self.laser = SensorMessageGetter("/base_scan", LaserScan)
+        self.img = SensorMessageGetter("/image", Image)
         # add
         self.cv_bridge = CvBridge()
         self.image_pub = rospy.Publisher("/image_mod", Image, queue_size=1)
@@ -188,6 +189,17 @@ class Sensors(object):
         while (rospy.Time.now().to_sec() - tm.to_sec()) < 1000: # change 100 -> 1000
 ```
 
+### Change process method of Sensors class
+
+```python
+    def process(self):
+        rate=rospy.Rate(20)
+        tm = rospy.Time.now()
+        while (rospy.Time.now().to_sec() - tm.to_sec()) < 100:
+            self.process_img(self.img.get_msg()) # self.process_laser(self.laser.get_msg())
+            rate.sleep()
+```
+
 ### Run
 
 At first, launch the simulator.
@@ -206,10 +218,11 @@ After a while run the `sensors.py`.
 
 ```shell
 $ rosrun oit_pbl_ros_samples sensors.py
-[INFO] [1624081858.601793, 16.200000]: /sensors:Started
-[INFO] [1624081858.706859, 16.300000]: Recv sensor data. type = <class 'sensor_msgs.msg._LaserScan.LaserScan'>
-[INFO] [1624081858.710373, 16.300000]: len(msg.ranges) = 720
-[INFO] [1624081858.714078, 16.300000]: msg.ranges[0] = 1.412500
+[INFO] [1654488044.770945, 515.600000]: /sensors:Started
+[INFO] [1654488044.883135, 515.700000]: Recv sensor data. type = <class 'sensor_msgs.msg._Image.Image'>
+[INFO] [1654488044.884449, 515.700000]: msg.width = 700, msg.height = 540
+[INFO] [1654488044.981161, 515.800000]: Recv sensor data. type = <class 'sensor_msgs.msg._Image.Image'>
+[INFO] [1654488044.983037, 515.800000]: msg.width = 700, msg.height = 540
 ```
 
 Open another emulator and type the following command.
