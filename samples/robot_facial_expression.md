@@ -134,7 +134,7 @@ happy.png  normal.png  sad.png # The face images. Edit them, or replace to your 
   - Do not change the file names.
 - See [Direct access directory and files inside the ROS container](https://github.com/oit-ipbl/portal/blob/main/setup/dockerros.md#direct-access-directory-and-files-inside-the-ros-container) to edit the images from Windows.
 
-## Challenge (add face reaction)
+## :o:Challenge (add face reaction)
 
 - Add other facial expressions than `happy`, `normal`, `sad`. e.g. `surprise`.
 
