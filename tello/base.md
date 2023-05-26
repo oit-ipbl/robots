@@ -14,3 +14,32 @@ SDK 2.0
 
 https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
 
+
+### 
+
+```python
+import socket
+import time
+
+#Create a UDP socket
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+tello_address = ('192.168.10.1' , 8889)
+
+#command-mode : 'command'
+socket.sendto('command'.encode('utf-8'),tello_address)
+print ('start')
+
+socket.sendto('takeoff'.encode('utf-8'),tello_address)
+print ('takeoff')
+
+#time.sleep(5)
+#socket.sendto('flip l'.encode('utf-8'),tello_address)
+#time.sleep(5)
+#socket.sendto('flip l'.encode('utf-8'),tello_address)
+#time.sleep(5)
+
+socket.sendto('land'.encode('utf-8'),tello_address)
+print ('land')
+
+
+```
