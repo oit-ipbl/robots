@@ -2,6 +2,8 @@
 
 Learn how to simply control tello here.
 
+##Take-off and Landing
+
 ```python
 import socket
 import time
@@ -16,12 +18,6 @@ print ('start')
 
 socket.sendto('takeoff'.encode('utf-8'),tello_address)
 print ('takeoff')
-
-#time.sleep(5)
-#socket.sendto('flip l'.encode('utf-8'),tello_address)
-#time.sleep(5)
-#socket.sendto('flip l'.encode('utf-8'),tello_address)
-#time.sleep(5)
 
 socket.sendto('land'.encode('utf-8'),tello_address)
 print ('land')
