@@ -16,7 +16,7 @@ https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide
 
 # important data
 
-##　Sending Commands and Receiving Responses
+## Sending Commands and Receiving Responses
 Tello IP: 192.168.10.1 UDP PORT: 8889 << - - >> PC 
 
 ## Receive Tello State
