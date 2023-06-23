@@ -1,17 +1,14 @@
 # Tello
-The Tello is a drone made by the Chinese company DJI. It can be controlled by a smartphone or laptop. This PBL is controlled automatically using python.
-
+The Tello is a drone manufactured by the Chinese company DJI. It can be controlled using a smartphone or laptop. This PBL (Project-Based Learning) is programmed to be controlled automatically using Python.
 https://www.ryzerobotics.com/tello
 
 ## Tello SDK
-The tello has an SDK, which can be used to control it.
+The Tello has an SDK (Software Development Kit) that allows users to control it.
 
-SDK 1.3
 
-https://terra-1-g.djicdn.com/2d4dce68897a46b19fc717f3576b7c6a/Tello%20%E7%BC%96%E7%A8%8B%E7%9B%B8%E5%85%B3/For%20Tello/Tello%20SDK%20Documentation%20EN_1.3_1122.pdf
 
-SDK 2.0
-
+### SDK 2.0
+You can find the user guide for SDK 2.0 at the following link:
 https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
 
 ## Important factor
