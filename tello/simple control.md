@@ -23,5 +23,4 @@ socket.sendto('land'.encode('utf-8'),tello_address)
 print ('land')
 
 ```
-
-
+However, there are simpler libraries available, which we will use in this PBL.
