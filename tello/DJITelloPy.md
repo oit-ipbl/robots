@@ -17,7 +17,7 @@ tello.connect()
 tello.takeoff()
 tello.land()
 ```
-
+## left, right, forward or back
 ```python
 tello = Tello()
 
