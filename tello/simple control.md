@@ -1,7 +1,7 @@
 # Simple Control
 
 Learn how to simply control tello here.
-
+The sdk is used to control tello!
 ## Take-off and Landing
 
 ```python
