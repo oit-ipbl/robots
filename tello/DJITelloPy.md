@@ -18,7 +18,7 @@ tello.takeoff()
 tello.land()
 ```
 
-## Left, Right, Forward or Back
+## Up,Down
 ```python
 tello = Tello()
 
@@ -29,7 +29,7 @@ tello.move_up(100)
 tello.move_down(100)
 
 tello.land()
-
+```
 
 
 ## Left, Right, Forward or Back
