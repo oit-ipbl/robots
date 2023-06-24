@@ -22,7 +22,6 @@ print ('takeoff')
 socket.sendto('land'.encode('utf-8'),tello_address)
 print ('land')
 
-
 ```
 
 
