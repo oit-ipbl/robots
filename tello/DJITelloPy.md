@@ -6,7 +6,7 @@ If you have not yet installed this library, perform the following commands.
 ```bash
 pip install djitellopy
 ```
-## Simple example
+## Take-off and Landing
 
 ```python
 from djitellopy import Tello
