@@ -54,7 +54,6 @@ tello.land()
 tello.end()
 ```
 ## Move
-move( up, 100)
 
 ```python
 from djitellopy import Tello
