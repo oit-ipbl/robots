@@ -49,7 +49,7 @@ tello.move_back(100)
 tello.land()
 tello.end()
 ```
-## move
+## Move
 move( up, 100)
 
 ```python
