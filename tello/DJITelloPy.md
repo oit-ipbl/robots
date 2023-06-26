@@ -7,7 +7,7 @@ If you have not yet installed this library, perform the following commands.
 pip install djitellopy
 ```
 ## Take-off and Landing
-
+### tello_sample01.py
 ```python
 from djitellopy import Tello
 
@@ -20,6 +20,7 @@ tello.end()
 ```
 
 ## Up,Down
+### tello_sample02.py
 ```python
 from djitellopy import Tello
 
@@ -37,6 +38,7 @@ tello.end()
 
 
 ## Left, Right, Forward or Back
+### tello_sample03.py
 ```python
 from djitellopy import Tello
 
@@ -54,7 +56,7 @@ tello.land()
 tello.end()
 ```
 ## Move
-
+### tello_sample04.py
 ```python
 from djitellopy import Tello
 
