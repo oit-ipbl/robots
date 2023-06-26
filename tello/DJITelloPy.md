@@ -21,6 +21,8 @@ tello.end()
 
 ## Up,Down
 ```python
+from djitellopy import Tello
+
 tello = Tello()
 
 tello.connect()
@@ -36,6 +38,8 @@ tello.end()
 
 ## Left, Right, Forward or Back
 ```python
+from djitellopy import Tello
+
 tello = Tello()
 
 tello.connect()
@@ -53,16 +57,18 @@ tello.end()
 move( up, 100)
 
 ```python
+from djitellopy import Tello
+
 tello = Tello()
 
 tello.connect()
 tello.takeoff()
 
-tello.move( up, 100)
-tello.move( left, 100)
-tello.move( right, 100)
-tello.move( forward, 100)
-tello.move( back, 100)
+tello.move( "up", 100)
+tello.move( "left", 100)
+tello.move( "right", 100)
+tello.move( "forward", 100)
+tello.move( "back", 100)
 tello.land()
 tello.end()
 ```
