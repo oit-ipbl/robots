@@ -16,6 +16,7 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 tello.land()
+tello.end()
 ```
 
 ## Up,Down
@@ -29,6 +30,7 @@ tello.move_up(100)
 tello.move_down(100)
 
 tello.land()
+tello.end()
 ```
 
 
@@ -45,5 +47,22 @@ tello.move_right(100)
 tello.move_forward(100)
 tello.move_back(100)
 tello.land()
+tello.end()
+```
+## move
+move( up, 100)
 
+```python
+tello = Tello()
+
+tello.connect()
+tello.takeoff()
+
+tello.move( up, 100)
+tello.move( left, 100)
+tello.move( right, 100)
+tello.move( forward, 100)
+tello.move( back, 100)
+tello.land()
+tello.end()
 ```
