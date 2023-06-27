@@ -43,7 +43,7 @@ tello.end()
 
 ##  Forward, Back, Left or Right
 ### tello_sample03.py
-
+The following codes are for forward/backward/left/right movement in Tello.
 #### move_forward(self, x),move_back(self, x),move_left(self, x),move_right(self, x)
 Fly x cm forward, back, left or right.
 
