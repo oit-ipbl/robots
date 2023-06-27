@@ -84,7 +84,7 @@ tello.move( "back", 100)
 tello.land()
 tello.end()
 ```
-## flip
+## Flip
 ###  tello_sample05.py
 ```python
 from djitellopy import Tello
@@ -103,7 +103,27 @@ tello.flip_right()
 tello.land()
 tello.end()
 ```
-## getter
+## Rotate
+### tello_sample06.py
+```python
+from djitellopy import Tello
+import time
+
+tello = Tello()
+
+tello.connect()
+tello.takeoff()
+
+tello.rotate_clockwise( 180)
+tello.rotate_clockwise(-180)
+
+tello.rotate_counter_clockwise(180)
+tello.rotate_counter_clockwise(-180)
+
+tello.land()
+tello.end()
+```
+## Getter
 ### tello_sample07.py
 ```python
 from djitellopy import Tello
