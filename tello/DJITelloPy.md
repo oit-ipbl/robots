@@ -41,8 +41,12 @@ tello.end()
 ```
 
 
-## Left, Right, Forward or Back
+##  Forward, Back, Left or Right
 ### tello_sample03.py
+
+#### move_forward(self, x),move_back(self, x),move_left(self, x),move_right(self, x)
+Fly x cm forward, back, left or right.
+
 ```python
 from djitellopy import Tello
 
