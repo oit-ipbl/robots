@@ -103,3 +103,22 @@ tello.flip_right()
 tello.land()
 tello.end()
 ```
+## getter
+### tello_sample07.py
+```python
+from djitellopy import Tello
+import time
+
+tello = Tello()
+
+tello.connect()
+tello.takeoff()
+
+print(f"Battery: {tello.get_battery()}%")
+print(f"flight_time:{tello.get_flight_time()}s")
+print(f"height:{tello.get_height()}cm")
+print(f"temperature:{tello.get_highest_temperature()}")
+
+tello.land()
+tello.end()
+```
