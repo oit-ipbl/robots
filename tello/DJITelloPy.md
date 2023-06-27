@@ -65,6 +65,9 @@ tello.end()
 ```
 ## Move
 ### tello_sample04.py
+
+#### move(self, direction, x)
+Tello fly up, down, left, right, forward or back with distance x cm. 
 ```python
 from djitellopy import Tello
 
