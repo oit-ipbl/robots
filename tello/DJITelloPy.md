@@ -8,6 +8,7 @@ pip install djitellopy
 ```
 ## Take-off and Landing
 ### tello_sample01.py
+The following codes are for takeoffs and landings in Tello.
 ```python
 from djitellopy import Tello
 
@@ -21,6 +22,9 @@ tello.end()
 
 ## Up,Down
 ### tello_sample02.py
+The following code is for vertical movement in Tello.
+#### move_up(self, x),move_down(self, x)
+Fly x cm up or down.
 ```python
 from djitellopy import Tello
 
