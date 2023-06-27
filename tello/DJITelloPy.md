@@ -84,8 +84,8 @@ tello.move( "back", 100)
 tello.land()
 tello.end()
 ```
-## Move
-### flip
+## flip
+###  tello_sample05.py
 ```python
 from djitellopy import Tello
 
