@@ -65,7 +65,7 @@ tello.end()
 ```
 ## Move
 ### tello_sample04.py
-
+You can also control tello by using the Move method.
 #### move(self, direction, x)
 Tello fly up, down, left, right, forward or back with distance x cm. 
 ```python
