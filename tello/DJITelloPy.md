@@ -100,7 +100,7 @@ tello.flip_forward()
 tello.flip_forward()
 tello.flip_left()
 tello.flip_right()
-flip("forward")
+tello.flip("forward")
 tello.land()
 tello.end()
 ```
