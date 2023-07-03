@@ -87,6 +87,8 @@ tello.end()
 ## Flip
 ###  tello_sample05.py
 You can also control tello by using the Flip method.
+#### flip(self, direction)　or flip_x (self)
+Do a flip maneuver. Users would normally call one of the flip_x functions instead.
 ```python
 from djitellopy import Tello
 
