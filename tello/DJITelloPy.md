@@ -86,6 +86,7 @@ tello.end()
 ```
 ## Flip
 ###  tello_sample05.py
+You can also control tello by using the Flip method.
 ```python
 from djitellopy import Tello
 
