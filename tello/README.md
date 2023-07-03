@@ -4,6 +4,7 @@ https://www.ryzerobotics.com/tello
 
 ## Firmware Update
 [Google plya](https://play.google.com/store/apps/details?id=com.ryzerobotics.tello&hl=ja-JP)
+[App Store](https://apps.apple.com/jp/app/tello/id1330559633)
 
 ## Tello SDK
 The Tello has an SDK (Software Development Kit) that allows users to control it.
