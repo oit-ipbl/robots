@@ -108,6 +108,9 @@ tello.end()
 ```
 ## Rotate
 ### tello_sample06.py
+The following code can be used to rotate tello, clockwise and counterclockwise rotation can be used.
+#### rotate_clockwise(self, x)
+Rotate x degree clockwise.
 ```python
 from djitellopy import Tello
 import time
@@ -127,6 +130,7 @@ tello.land()
 tello.end()
 ```
 ## Getter
+The following methods can be used to determine the status of tello. In particular, get_current_state method can be used to know all the states.
 ### tello_sample07.py
 ```python
 from djitellopy import Tello
