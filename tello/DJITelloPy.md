@@ -142,7 +142,7 @@ print(f"flight_time:{tello.get_flight_time()}s")
 print(f"height:{tello.get_height()}cm")
 print(f"temperature:{tello.get_highest_temperature()}")
 print(f"Tof:{tello.get_distance_tof()}cm")
-
+print(f"current_state:{tello.get_current_state()}")
 tello.land()
 tello.end()
 ```
