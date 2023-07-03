@@ -4,6 +4,7 @@ https://www.ryzerobotics.com/tello
 
 ## Firmware Update
 To run Tello with python3, the formware needs to be updated, which can be done from an app on your phone.
+
 [Google plya](https://play.google.com/store/apps/details?id=com.ryzerobotics.tello&hl=ja-JP)
 
 [App Store](https://apps.apple.com/jp/app/tello/id1330559633)
