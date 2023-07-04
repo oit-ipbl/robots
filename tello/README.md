@@ -4,6 +4,8 @@ https://www.ryzerobotics.com/tello
 
 ## SSID
 Make sure to check the SSID of each Tello. Do not use a different ID.
+
+
 <img width="400" src="2023-07-04 20.09.28.jpg">
 
 ## Firmware Update
