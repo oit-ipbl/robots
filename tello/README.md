@@ -3,7 +3,7 @@ The Tello is a drone manufactured by the Chinese company DJI. It can be controll
 https://www.ryzerobotics.com/tello
 
 ## SSID
-![tello.jpg](./2023-07-04 20.09.28.jpg "image00.jpg")
+![tello.jpg](tello/2023-07-04 20.09.28.jpg)
 
 
 ## Firmware Update
