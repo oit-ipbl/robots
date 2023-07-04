@@ -9,8 +9,7 @@ pip install djitellopy
 ## Take-off and Landing
 ### tello_sample01.py
 The following codes are for takeoffs and landings in Tello.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 ```python
 from djitellopy import Tello
 
@@ -25,8 +24,7 @@ tello.end()
 ## Up,Down
 ### tello_sample02.py
 The following code is for vertical movement in Tello.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 #### move_up(self, x),move_down(self, x)
 Fly x cm up or down.
 ```python
@@ -48,8 +46,7 @@ tello.end()
 ##  Forward, Back, Left or Right
 ### tello_sample03.py
 The following codes are for forward/backward/left/right movement in Tello.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 #### move_forward(self, x),move_back(self, x),move_left(self, x),move_right(self, x)
 Fly x cm forward, back, left or right.
 
@@ -72,8 +69,7 @@ tello.end()
 ## Move
 ### tello_sample04.py
 The following code is for control tello by using the Move method.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 #### move(self, direction, x)
 Tello fly up, down, left, right, forward or back with distance x cm. 
 ```python
@@ -95,8 +91,7 @@ tello.end()
 ## Flip
 ###  tello_sample05.py
 The following code is for control tello by using the Flip method.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 #### flip(self, direction)　or flip_x (self)
 Do a flip maneuver. Users would normally call one of the flip_x functions instead.
 ```python
@@ -119,8 +114,7 @@ tello.end()
 ## Rotate
 ### tello_sample06.py
 The following code can be used to rotate tello, clockwise and counterclockwise rotation can be used.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 #### rotate_clockwise(self, x)
 Rotate x degree clockwise.
 ```python
@@ -143,8 +137,7 @@ tello.end()
 ```
 ## Getter
 The following methods can be used to determine the status of tello. In particular, get_current_state method can be used to know all the states.
-
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 ### tello_sample07.py
 ```python
 from djitellopy import Tello
@@ -165,7 +158,7 @@ tello.land()
 tello.end()
 ```
 ## Infinite loop
-Check the drone's movement by moving the code.
+Check the code and the drone's movement.
 ### tello_sample08.py
 ```python
 from djitellopy import Tello
