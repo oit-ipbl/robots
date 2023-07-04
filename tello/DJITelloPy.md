@@ -121,10 +121,10 @@ tello.connect()
 tello.takeoff()
 
 tello.rotate_clockwise( 180)
-tello.rotate_clockwise(-180)
+
 
 tello.rotate_counter_clockwise(180)
-tello.rotate_counter_clockwise(-180)
+
 
 tello.land()
 tello.end()
@@ -147,6 +147,30 @@ print(f"height:{tello.get_height()}cm")
 print(f"temperature:{tello.get_highest_temperature()}")
 print(f"Tof:{tello.get_distance_tof()}cm")
 print(f"current_state:{tello.get_current_state()}")
+tello.land()
+tello.end()
+```
+##
+
+### tello_sample08.py
+```python
+from djitellopy import Tello
+import time
+import msvcrt
+
+tello = Tello()
+
+tello.connect()
+tello.takeoff()
+
+while True:
+    tello.rotate_clockwise(45)
+    time.sleep(2)
+    tello.rotate_counter_clockwise(45)
+    if msvcrt.kbhit():
+        if "q" == msvcrt.getch().decode():
+            print("press q")
+            break
 tello.land()
 tello.end()
 ```
