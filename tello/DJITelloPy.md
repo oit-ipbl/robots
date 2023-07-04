@@ -158,6 +158,7 @@ tello.land()
 tello.end()
 ```
 ## Infinite loop
+Infinite loops and their exits can be as follows.
 Check the code and the drone's movement.
 ### tello_sample08.py
 ```python
