@@ -4,7 +4,7 @@ https://www.ryzerobotics.com/tello
 
 ## SSID
 ![tello.jpg](2023-07-04 20.09.28.jpg)
-<img width="100" src="2023-07-04 20.09.28.jpg">
+<img width="400" src="2023-07-04 20.09.28.jpg">
 
 ## Firmware Update
 To run Tello with python3, the formware needs to be updated, which can be done from an app on your phone.
