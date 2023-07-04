@@ -183,4 +183,5 @@ tello.land()
 tello.end()
 ```
 ## Exercise
-1. The drone should be flown so that it draws an equilateral triangle with side lengths of 100 cm at 180 cm from the floor, starting at the apex of the triangle.
+1. The drone should be flown so that it draws an equilateral triangle with side lengths of 100 cm at 180 cm from the floor.
+2. The target height is 180 cm, and the loop is infinite while adjusting the height. However, when q is pressed, the loop must be exited.
