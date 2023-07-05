@@ -126,10 +126,10 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 
-tello.rotate_clockwise( 50)
+tello.rotate_clockwise( 90)
 
 
-tello.rotate_counter_clockwise(180)
+tello.rotate_counter_clockwise(90)
 
 
 tello.land()
