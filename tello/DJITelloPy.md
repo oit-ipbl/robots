@@ -58,11 +58,11 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 
-tello.move_up(100)
-tello.move_left(100)
-tello.move_right(100)
-tello.move_forward(100)
-tello.move_back(100)
+tello.move_up(50)
+tello.move_left(50)
+tello.move_right(50)
+tello.move_forward(50)
+tello.move_back(50)
 tello.land()
 tello.end()
 ```
@@ -80,11 +80,11 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 
-tello.move( "up", 100)
-tello.move( "left", 100)
-tello.move( "right", 100)
-tello.move( "forward", 100)
-tello.move( "back", 100)
+tello.move( "up", 50)
+tello.move( "left", 50)
+tello.move( "right", 50)
+tello.move( "forward", 50)
+tello.move( "back", 50)
 tello.land()
 tello.end()
 ```
@@ -126,7 +126,7 @@ tello = Tello()
 tello.connect()
 tello.takeoff()
 
-tello.rotate_clockwise( 180)
+tello.rotate_clockwise( 50)
 
 
 tello.rotate_counter_clockwise(180)
@@ -183,5 +183,5 @@ tello.land()
 tello.end()
 ```
 ## Exercise
-1. The drone should be flown so that it draws an equilateral triangle with side lengths of 100 cm at 180 cm from the floor.
+1. The drone should be flown so that it draws an equilateral triangle with side lengths of 50 cm at 180 cm from the floor.
 2. The target height is 180 cm, and the loop is infinite while adjusting the height. However, when q is pressed, the loop must be exited.
