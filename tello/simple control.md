@@ -13,14 +13,29 @@ socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 tello_address = ('192.168.10.1' , 8889)
 
 #command-mode : 'command'
-socket.sendto('command'.encode('utf-8'),tello_address)
 print ('start')
+socket.sendto('command'.encode('utf-8'),tello_address)
+response, ip = socket.recvfrom(1024)
+print('Response:', response.decode('utf-8'))
+time.sleep(1)
 
-socket.sendto('takeoff'.encode('utf-8'),tello_address)
 print ('takeoff')
+socket.sendto('takeoff'.encode('utf-8'),tello_address)
+response, ip = socket.recvfrom(1024)
+print('Response:', response.decode('utf-8'))
+time.sleep(1)
 
-socket.sendto('land'.encode('utf-8'),tello_address)
+print ('up')
+socket.sendto('up 30'.encode('utf-8'),tello_address)
+response, ip = socket.recvfrom(1024)
+print('Response:', response.decode('utf-8'))
+time.sleep(1)
+
 print ('land')
+socket.sendto('land'.encode('utf-8'),tello_address)
+response, ip = socket.recvfrom(1024)
+print('Response:', response.decode('utf-8'))
+time.sleep(1)
 
 socket.close()
 ```
