@@ -40,4 +40,4 @@ Tello IP: 192.168.10.1 - >> PC / Mac / Mobile UDP Server: 0.0.0.0 UDP PORT:8890
 Tello IP: 192.168.10.1 - >> PC / Mac / Mobile UDP Server: 0.0.0.0 UDP PORT:11111
 
 Now let's actually use these SDKs to control tello!
-[Simple Control](https://github.com/oit-ipbl/robots/blob/main/tello/simple%20control.md)
+[Simple Control](https://github.com/oit-ipbl/robots/blob/main/tello/simple_control.md)
